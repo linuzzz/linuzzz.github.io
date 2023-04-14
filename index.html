@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+
+<html class="bg">
 
 <head>
   
@@ -11,26 +12,36 @@
         font-family: Audiowide, sans-serif;
         margin: 0;
         padding: 0;
-        /* background-color: #000000; */
-        background-image: url('https://media.pixelfed.social/public/m/_v2/425027688081226442/9e2db7367-e375b7/lSProp4UGVSX/blIBBa5yS047MPILRN73BUxrT1pQmc0M5dQE1b2m.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
+        background-color: rgba(10,10,10,0.2);
+    }
 
     h3 {
       color: white;
     }
 
+
+    .bg {
+      /* The background image used */
+      background-image: url("https://media.pixelfed.social/public/m/_v2/425027688081226442/9e2db7367-e375b7/Gy136iqK8FJT/OQLCeV8LWmMAajS16vzCLYXYHhJiXmQV48W84zwa.jpg");
+      /* Full height */
+      height: 100%; 
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
 		.row::after {
 			content: "";
 			clear: both;
 			display: table;
+      
 		}
 		.column {
 			float: left;
 			width: 19%;
 			padding: 5px;
+      
 		}
 		@media screen and (max-width: 600px) {
 			.column {
@@ -38,12 +49,12 @@
 			}
 		}
 		.card {
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
 			max-width: 300px;
 			margin: auto;
 			text-align: center;
 			font-family: Cantarell;
-			background-color: rgba(120,120,120,0.7);
+			background-color: rgba(120,120,120,0.5);
       border-radius: 30px;
       padding: 1px;
       
@@ -98,7 +109,6 @@
 			</div>
 		</div>
 
-
     <div class="column">
 			<div class="card">
 				<h3>Top Sites</h3>
@@ -109,13 +119,19 @@
 			</div>
 		</div>
 
+
 		<div class="column">
 			<div class="card">
-				<h3>News</h3>
-				<a href="https://www.inoreader.com/folder/Torino"><i class="fas fa-rss"></i>Inoreader</a>
-        <a href="https://www.ansa.it"><i class="fas fa-newspaper"></i>Ansa</a>        
+				<h3>Social</h3>
+				<a href="https://www.reddit.com/"><i class="fab fa-reddit"></i>Reddit</a>
+        <a href="https://twitter.com/i/lists/89090378"><i class="fab fa-twitter"></i>Twitter</a>
+        <a href="https://infosec.exchange/explore"><i class="fab fa-mastodon"></i>Mastodon</a>
+        <a href="https://pixelfed.social/i/web"><i class="fas fa-image"></i>Pixelfed</a>
+        <a href="https://www.pinterest.it/"><i class="fab fa-pinterest"></i>Pinterest</a>
+        <a href="https://www.goodreads.com/"><i class="fab fa-goodreads"></i>Goodreads</a>
 			</div>
 		</div>
+
 
 		<div class="column">
 			<div class="card">
@@ -137,18 +153,16 @@
 
   </div>
 
-  <div class="row">
+<div class="row">
+
 		<div class="column">
 			<div class="card">
-				<h3>Social</h3>
-				<a href="https://www.reddit.com/"><i class="fab fa-reddit"></i>Reddit</a>
-        <a href="https://twitter.com/i/lists/89090378"><i class="fab fa-twitter"></i>Twitter</a>
-        <a href="https://infosec.exchange/explore"><i class="fab fa-mastodon"></i>Mastodon</a>
-        <a href="https://pixelfed.social/i/web"><i class="fas fa-image"></i>Pixelfed</a>
-        <a href="https://www.pinterest.it/"><i class="fab fa-pinterest"></i>Pinterest</a>
-
+				<h3>News</h3>
+				<a href="https://www.inoreader.com/folder/Torino"><i class="fas fa-rss"></i>Inoreader</a>
+        <a href="https://www.ansa.it"><i class="fas fa-newspaper"></i>Ansa</a>        
 			</div>
 		</div>
+
 
     <div class="column">
 			<div class="card">
@@ -188,8 +202,6 @@
 		</div>
 
   </div>
-
-
 
 </body>
 </html>
