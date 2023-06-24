@@ -11,15 +11,51 @@ body {
 	gap: 2em;
 	padding: 1em;
 	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-	grid-template-rows: repeat(2, 10em);
+	/*grid-template-rows: repeat(2, 20em);*/
+	grid-auto-rows: auto;
 	/* background-color: #333; */
 	/*background-color: #00ff00;*/
 }
 
 .card {
-	background-color: #333;
+	/* background-color: #333; */
 	border: 0.1em solid white;
 	border-radius: 0.5em;
 	text-align: center;
 	padding: 0.5em;
+	background-size: cover;
+	/* background-color: rgba(255,0,0,0); */
+}
+
+.card a {
+	/* to remove underline from link*/
+	text-decoration: none;
+	color: white;
+	font-size: 1em;
+   margin-bottom: 1em;
+   /* required for next position absolute*/
+   position: relative;
+   /* inline-block per andare a capo*/
+	display: inline-block;
+	width: 80%;
+	padding: 0.5em;
+	border: 0.1em solid #ccc;
+   border-radius: 2em;
+   background-color: rgba(0,0,0,0.8);
+}
+
+.card h3 {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.card a:hover {
+	background-color: #777777;
+}
+		
+.card a i {
+	position: absolute;
+	top: 50%;
+	left: 2em;
+	transform: translateY(-50%);
+	font-size: 20px;
 }
