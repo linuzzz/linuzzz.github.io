@@ -1,210 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html class="bg">
+<html>
 
 <head>
-  
-	<title>My Start Page</title>
+	<title>Home Page</title>
+	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <link href="home-css.css" rel="stylesheet">
+	<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Abel'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-	<style>
-    body {
-        font-family: Audiowide, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: rgba(10,10,10,0.2);
-    }
+	
 
-    h3 {
-      color: white;
-    }
+<script type="text/javascript" >
+	const CryptoJS = require('crypto-js');
+
+	function dec_1(){
+		key = prompt("Please enter your hey", "decryption");	
+		console.log(key)
+		enc = CryptoJS.AES.encrypt("Message", "Secret Passphrase");
+		console.log(key.toString())
+	}
+
+</script>
 
 
-    .bg {
-      /* The background image used */
-      background-image: url("https://media.pixelfed.social/public/m/_v2/425027688081226442/9e2db7367-e375b7/Gy136iqK8FJT/OQLCeV8LWmMAajS16vzCLYXYHhJiXmQV48W84zwa.jpg");
-      /* Full height */
-      height: 100%; 
-      /* Center and scale the image nicely */
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-  }
-
-		.row::after {
-			content: "";
-			clear: both;
-			display: table;
-      
-		}
-		.column {
-			float: left;
-			width: 19%;
-			padding: 5px;
-      
-		}
-		@media screen and (max-width: 600px) {
-			.column {
-				width: 100%;
-			}
-		}
-		.card {
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
-			max-width: 300px;
-			margin: auto;
-			text-align: center;
-			font-family: Cantarell;
-			background-color: rgba(120,120,120,0.5);
-      border-radius: 30px;
-      padding: 1px;
-      
-		}
-
-    /*
-		.title {
-			color: yellow;
-			font-size: 18px;
-		}
-
-  */
-		.card a {
-			text-decoration: none;
-			color: white;
-			font-size: 20px;
-      margin-bottom: 10px;
-			display: inline-block;
-			width: 80%;
-			padding: 10px;
-			border: 1px solid #ccc;
-			border-radius: 5px;
-			position: relative;
-      border-radius: 30px;
-		}
-		.card a:hover {
-			background-color: #777777;
-		}
-		.card a i {
-			position: absolute;
-			top: 50%;
-			left: 10px;
-			transform: translateY(-50%);
-			font-size: 20px;
-		}
-	</style>
 </head>
+
 <body>
-	<h2 style="text-align:center; color:orange" class="current_date">
-<script> document.write(new Date().toLocaleDateString()); </script>
-</h2>
-	<div class="row">
-		<div class="column">
-			<div class="card">
-				<h3>Google</h3>
-				<a href="https://mail.google.com/mail/u/0/#inbox"><i class="fab fa-google"></i>Mail</a>
-        <a href="https://drive.google.com/"><i class="fab fa-google-drive"></i>Drive</a>
-        <a href="https://calendar.google.com/calendar/u/0/r/week"><i class="fas fa-calendar"></i>Calendar</a>
-        <a href="https://keep.google.com/u/0/"><i class="fas fa-sticky-note"></i>Keep</a>
-        <a href="https://www.google.it/maps"><i class="fas fa-map"></i>Maps</a>
-        <a href="https://translate.google.com/"><i class="fas fa-language"></i>Translate</a>
-			</div>
-		</div>
 
-    <div class="column">
-			<div class="card">
-				<h3>Top Sites</h3>
-				<a href="https://www.amazon.it/"><i class="fab fa-amazon"></i>Amazon</a>
-        <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i>Whatsapp</a>
-        <a href="https://web.telegram.org/z/"><i class="fab fa-telegram"></i>Telegram</a>
-        <a href="https://www.strava.com/dashboard#_=_"><i class="fab fa-strava"></i>Strava</a>
-        
-        <a href="#"><i class="fas fa-briefcase-medical"></i>Medicine</a>
-			</div>
-		</div>
+<header><h1><script> document.write(new Date().toLocaleDateString()); </script></h1></header>
 
 
-		<div class="column">
-			<div class="card">
-				<h3>Social</h3>
-				<a href="https://www.reddit.com/"><i class="fab fa-reddit"></i>Reddit</a>
-        <a href="https://twitter.com/i/lists/89090378"><i class="fab fa-twitter"></i>Twitter</a>
-        <a href="https://infosec.exchange/explore"><i class="fab fa-mastodon"></i>Mastodon</a>
-        <a href="https://pixelfed.social/i/web"><i class="fas fa-image"></i>Pixelfed</a>
-        <a href="https://www.pinterest.it/"><i class="fab fa-pinterest"></i>Pinterest</a>
-        <a href="https://www.goodreads.com/"><i class="fab fa-goodreads"></i>Goodreads</a>
-			</div>
-		</div>
+<div class="cards">
+<!--
+<div class="card" style="background-image: url('./images/goo.png');">
+-->
+<div class="card" style="background-color: #ffffff; opacity: 0.8; background-image:  linear-gradient(135deg, #f78545 25%, transparent 25%), linear-gradient(225deg, #f78545 25%, transparent 25%), linear-gradient(45deg, #f78545 25%, transparent 25%), linear-gradient(315deg, #f78545 25%, #ffffff 25%); background-position: 18px 0, 18px 0, 0 0, 0 0; background-size: 18px 18px; background-repeat: repeat;">
+	<h3>Apps</h3>
+		<a href="http://www.viaggiatreno.it/vt_pax_internet/mobile/numero?lang=IT"><i class="fas fa-train"></i>Cerca Treno</a>
+		<a href="http://www.viaggiatreno.it/"><i class="fa fa-train"></i>Viaggia in treno</a>
+		<a href="https://www.icloud.com/find"><i class="fab fa-apple"></i>iCloud Find</a>
+		<a href="https://www.gtt.to.it/cms/percorari/arrivi?palina=3437"><i class="fas fa-bus"></i>GTT - 58 dest. centro</a>
+		
+      
+</div>
+
+<div class="card" style="background: radial-gradient(circle, #e3a946 40%, transparent 41%),radial-gradient(circle at bottom left, #e3a946 20%, transparent 21%),radial-gradient(circle at bottom right, #e3a946 20%, transparent 21%),radial-gradient(circle at top left, #e3a946 20%, transparent 21%),radial-gradient(circle at top right, #e3a946 20%, transparent 21%);background-size: 2em 2em;background-color: #ffffff; opacity: 1">
+	<h3>Google</h3>
+		<a href="https://mail.google.com/mail/u/0/#inbox"><i class="fab fa-google"></i>Mail</a>
+      <a href="https://drive.google.com/"><i class="fab fa-google-drive"></i>Drive</a>
+      <a href="https://calendar.google.com/calendar/u/0/r/week"><i class="fas fa-calendar"></i>Calendar</a>
+      <a href="https://keep.google.com/u/0/"><i class="fas fa-sticky-note"></i>Keep</a>
+      <a href="https://www.google.it/maps"><i class="fas fa-map"></i>Maps</a>
+		<a href="https://photos.google.com/"><i class="fas fa-image"></i>Photos</a>
+      <a href="https://translate.google.com/"><i class="fas fa-language"></i>Translate</a>
+</div>
+
+<div class="card" style="background-image: url('./images/pattern2.png');opacity: 0.8;">
+	<h3>Top Sites</h3>
+	<a href="https://www.amazon.it/"><i class="fab fa-amazon"></i>Amazon</a>
+   <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i>Whatsapp</a>
+   <a href="https://web.telegram.org/z/"><i class="fab fa-telegram"></i>Telegram</a>
+   <a href="https://www.strava.com/dashboard#_=_"><i class="fab fa-strava"></i>Strava</a>
+   <a href="#" onclick="dec_1()"><i class="fas fa-briefcase-medical"></i>Medicine</a>
+
+</div>
+
+<div class="card" style="background-image: url('./images/pattern3.png');opacity: 0.8;">
+	<h3>Social</h3>
+	<a href="https://www.reddit.com/"><i class="fab fa-reddit"></i>Reddit</a>
+   <a href="https://twitter.com/i/lists/89090378"><i class="fab fa-twitter"></i>Twitter</a>
+   <a href="https://infosec.exchange/explore"><i class="fab fa-mastodon"></i>Mastodon</a>
+   <a href="https://pixelfed.social/i/web"><i class="fas fa-image"></i>Pixelfed</a>
+   <a href="https://www.pinterest.it/"><i class="fab fa-pinterest"></i>Pinterest</a>
+   <a href="https://www.goodreads.com/"><i class="fab fa-goodreads"></i>Goodreads</a>
+   <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i>Facebook</a>
+	
+</div>
+
+<div class="card" style="background-image: url('./images/pattern4.png');opacity: 0.8;">
+	<h3>Music & Movies</h3>
+	<a href="https://www.last.fm/user/Linuzzz19/library"><i class="fab fa-lastfm"></i>Lastfm</a>
+   <a href="https://openscrobbler.com/"><i class="fab fa-lastfm-square"></i>Openscrobbler</a>
+   <a href="https://www.deezer.com/us/album/14343880"><i class="fab fa-deezer"></i>Deezer</a>
+   <a href="https://www.music-map.com/"><i class="fas fa-music"></i>Similar Music</a>	
+   <a href="https://www.imdb.com/user/ur151366433/lists"><i class="fab fa-imdb"></i>IMDB</a>
+
+</div>
+
+<div class="card" style="background-image: url('./images/pattern5.png');opacity: 0.8;">
+	<h3>Meteo</h3>
+	<a href="https://www.ilmeteo.it/box/previsioni.php?citta=7301&type=day1&width=600&ico=1&lang=ita&days=6&font=Tahoma&fontsize=14&bg=FFFFFF&fg=000000&bgtitle=0099FF&fgtitle=FFFFFF&bgtab=F0F0F0&fglink=1773C2"><i class="fas fa-sun"></i>Meteo Torino</a>
+   <a href="https://www.3bmeteo.com/meteo/torino"><i class="fas fa-cloud"></i>3B Meteo</a>
+</div>
+
+<div class="card" style="background-image: url('./images/pattern6.png');opacity: 0.8;">
+	<h3>News</h3>
+	<a href="https://www.inoreader.com/folder/Torino"><i class="fas fa-rss"></i>Inoreader</a>
+   <a href="https://www.ansa.it"><i class="fas fa-newspaper"></i>Ansa</a>
+</div>
+
+<div class="card" style="background-image: url('./images/pattern7.png');opacity: 0.8;">
+	<h3>Tools</h3>
+	<a href="https://forum.obsidian.md/"><i class="fab fa-markdown"></i>Obsidian Forum</a>
+   <a href="https://github.com/"><i class="fab fa-github"></i>Github</a>
+   <a href="https://www.ifconfig.me"><i class="fas fa-network-wired"></i>ifconfig.me</a>
+   <a href="https://getpocket.com/saves"><i class="fab fa-get-pocket"></i>Pocket</a>	
+   <a href="https://www.unixtimestamp.com/"><i class="fas fa-clock"></i>Unix Timestamp</a>
+   
+</div>
+
+<div class="card" style="background-image: url('./images/pattern8.png');opacity: 0.8;">
+	<h3>Linux</h3>
+	<a href="https://extensions.gnome.org/"><i class="fab fa-linux"></i>Gnome Ext</a>
+   <a href="https://www.gnome-look.org/browse/"><i class="fab fa-redhat"></i>Gnome Look</a>
+   <a href="https://getfedora.org/"><i class="fab fa-fedora"></i>Fedora</a>
+</div>
+
+<div class="card" style="background-image: url('./images/search.png');">
+	<h3>Search</h3>
+	<a href="https://www.google.it"><i class="fab fa-google"></i>Google</a>
+   <a href="https://www.bing.com/"><i class="fab fa-microsoft"></i>Bing</a>
+</div>
 
 
-		<div class="column">
-			<div class="card">
-				<h3>Music</h3>
-				<a href="https://www.last.fm/user/Linuzzz19/library"><i class="fab fa-lastfm"></i>Lastfm</a>
-        <a href="https://openscrobbler.com/"><i class="fab fa-lastfm-square"></i>Openscrobbler</a>
-        <a href="https://www.deezer.com/us/album/14343880"><i class="fab fa-deezer"></i>Deezer</a>
-        <a href="https://www.music-map.com/"><i class="fas fa-music"></i>Similar Music</a>
-			</div>
-		</div>
+</div>
 
-    <div class="column">
-			<div class="card">
-				<h3>Meteo</h3>
-				<a href="https://www.ilmeteo.it/box/previsioni.php?citta=7301&type=day1&width=600&ico=1&lang=ita&days=6&font=Tahoma&fontsize=14&bg=FFFFFF&fg=000000&bgtitle=0099FF&fgtitle=FFFFFF&bgtab=F0F0F0&fglink=1773C2"><i class="fas fa-sun"></i>Meteo Torino</a>
-        <a href="https://www.3bmeteo.com/meteo/torino"><i class="fas fa-cloud"></i>3B Meteo</a>
-			</div>
-		</div>
+  
 
-  </div>
-
-<div class="row">
-
-		<div class="column">
-			<div class="card">
-				<h3>News</h3>
-				<a href="https://www.inoreader.com/folder/Torino"><i class="fas fa-rss"></i>Inoreader</a>
-        <a href="https://www.ansa.it"><i class="fas fa-newspaper"></i>Ansa</a>        
-			</div>
-		</div>
+<footer>
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/Yq2jJLswL8I">
+</iframe> 
+</footer>
 
 
-    <div class="column">
-			<div class="card">
-				<h3>Tools</h3>
-				<a href="https://forum.obsidian.md/"><i class="fab fa-markdown"></i>Obsidian Forum</a>
-        <a href="https://github.com/"><i class="fab fa-github"></i>Github</a>
-        <a href="https://www.ifconfig.me"><i class="fas fa-network-wired"></i>ifconfig.me</a>
-        <a href="https://getpocket.com/saves"><i class="fab fa-get-pocket"></i>Pocket</a>
-			</div>
-		</div>
-
-   <div class="column">
-			<div class="card">
-				<h3>Linux</h3>
-				<a href="https://extensions.gnome.org/"><i class="fab fa-linux"></i>Gnome Ext</a>
-        <a href="https://www.gnome-look.org/browse/"><i class="fab fa-redhat"></i>Gnome Look</a>
-        <a href="https://getfedora.org/"><i class="fab fa-fedora"></i>Fedora</a>
-			</div>
-		</div>
-
-  <div class="column">
-			<div class="card">
-				<h3>Bank</h3>
-				<a href="#"><i class="fas fa-money-bill"></i>Bank1</a>
-        <a href="#"><i class="fas fa-money-bill"></i>Bank2</a>
-        <a href="#"><i class="fas fa-money-bill"></i>Bank3</a>
-			</div>
-		</div>
-
-  <div class="column">
-			<div class="card">
-				<h3>Search</h3>
-				<a href="https://www.google.it"><i class="fab fa-google"></i>Google</a>
-        <a href="https://www.bing.com/"><i class="fab fa-microsoft"></i>Bing</a>
-        
-			</div>
-		</div>
-
-  </div>
 
 </body>
-</html>
 
+</html>
