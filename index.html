@@ -7,30 +7,70 @@
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
    
-   <link href="home-css.css" rel="stylesheet">
+   <link href="style.css" rel="stylesheet">
 	<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Abel'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+		
 
 <script type="text/javascript" >
-	const CryptoJS = require('crypto-js');
 
-	function dec_1(){
-		key = prompt("Please enter your hey", "decryption");	
-		console.log(key)
-		enc = CryptoJS.AES.encrypt("Message", "Secret Passphrase");
-		console.log(key.toString())
+	var encurllist = ['U2FsdGVkX1/KxLA3bH594me4yDg8XizNy61Rli8iEzMpxHNP+nCf+S9cFbmymN8Oui4y3XXJiLITZdRds2IRJQ==']
+	
+	function encrypt(cleartext, key){
+  		//var inputan = document.getElementById('inputan').value;
+		console.log(cleartext);  		
+  		return CryptoJS.AES.encrypt(cleartext, key);
+  		
+  		//document.getElementById('app').innerHTML = encrypted;
+	}	
+
+	function decrypt(hiddentext, key){
+  		//var inputan2 = document.getElementById('inputan2').value;
+  		//console.log(hiddentext, key)
+  		return CryptoJS.AES.decrypt(hiddentext, key);
+  		//document.getElementById('app2').innerHTML = decrypted.toString(CryptoJS.enc.Utf8);
 	}
 
-</script>
+	function decurl(i){
+		console.log(encurllist[i]);
+		key = prompt("Please enter your key", "decryption");
+		decry = decrypt(encurllist[i], key);
+		window.open(decry.toString(CryptoJS.enc.Utf8));
+		return false;
+		//cleartext = prompt("Please enter your text", "decryption");
+		//key = prompt("Please enter your key", "decryption");	
+		//console.log(key);
+		//enc = encrypt(cleartext, key);
+		//console.log(enc.toString(CryptoJS.enc.Utf8));
+	}
 
+
+</script>
 
 </head>
 
 <body>
 
-<header><h1><script> document.write(new Date().toLocaleDateString()); </script></h1></header>
+<header>
 
+<h1>
+
+<script> document.write(new Date().toLocaleDateString()); </script>
+
+<div id="ip"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $.get("https://ipinfo.io", function(response){
+                $("#ip").html("Your current ip address is: " + response.ip);
+            },"json")
+        </script>
+</h1>
+
+
+
+
+</header>
 
 <div class="cards">
 <!--
@@ -57,17 +97,17 @@
       <a href="https://translate.google.com/"><i class="fas fa-language"></i>Translate</a>
 </div>
 
-<div class="card" style="background-image: url('./images/pattern2.png');opacity: 0.8;">
+<div class="card pattern1">
 	<h3>Top Sites</h3>
 	<a href="https://www.amazon.it/"><i class="fab fa-amazon"></i>Amazon</a>
    <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i>Whatsapp</a>
    <a href="https://web.telegram.org/z/"><i class="fab fa-telegram"></i>Telegram</a>
    <a href="https://www.strava.com/dashboard#_=_"><i class="fab fa-strava"></i>Strava</a>
-   <a href="#" onclick="dec_1()"><i class="fas fa-briefcase-medical"></i>Medicine</a>
+   <a href="#" onclick="decurl(0)"><i class="fas fa-briefcase-medical"></i>Medicine</a>
 
 </div>
 
-<div class="card" style="background-image: url('./images/pattern3.png');opacity: 0.8;">
+<div class="card pattern2">
 	<h3>Social</h3>
 	<a href="https://www.reddit.com/"><i class="fab fa-reddit"></i>Reddit</a>
    <a href="https://twitter.com/i/lists/89090378"><i class="fab fa-twitter"></i>Twitter</a>
@@ -95,13 +135,13 @@
    <a href="https://www.3bmeteo.com/meteo/torino"><i class="fas fa-cloud"></i>3B Meteo</a>
 </div>
 
-<div class="card" style="background-image: url('./images/pattern6.png');opacity: 0.8;">
+<div class="card pattern3">
 	<h3>News</h3>
 	<a href="https://www.inoreader.com/folder/Torino"><i class="fas fa-rss"></i>Inoreader</a>
    <a href="https://www.ansa.it"><i class="fas fa-newspaper"></i>Ansa</a>
 </div>
 
-<div class="card" style="background-image: url('./images/pattern7.png');opacity: 0.8;">
+<div class="card pattern4">
 	<h3>Tools</h3>
 	<a href="https://forum.obsidian.md/"><i class="fab fa-markdown"></i>Obsidian Forum</a>
    <a href="https://github.com/"><i class="fab fa-github"></i>Github</a>
@@ -130,6 +170,7 @@
   
 
 <footer>
+
 <iframe width="300" height="200"
 src="https://not-ytb.blocus.ch/embed/Yq2jJLswL8I">
 </iframe>

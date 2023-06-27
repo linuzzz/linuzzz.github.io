@@ -1,0 +1,154 @@
+body {
+	margin: 1em;
+  	background-color: #333;
+  	font-family: "Abel";
+  	color: #fff;
+
+}
+
+header {
+	padding-left: 1.2em;
+}
+
+footer {
+	padding-left: 1.2em;
+}
+
+
+.cards {
+	display: grid;
+	gap: 2em;
+	padding: 1em;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	/*grid-template-rows: repeat(2, 20em);*/
+	grid-auto-rows: auto;
+	/* background-color: #333; */
+	/*background-color: #00ff00;*/
+}
+
+.card {
+	/* background-color: #333; */
+	border: 0.1em solid white;
+	border-radius: 0.5em;
+	text-align: center;
+	padding: 0.5em;
+	background-size: cover;
+	/* background-color: rgba(255,0,0,0); */
+}
+
+.card a {
+	/* to remove underline from link*/
+	text-decoration: none;
+	color: white;
+	font-size: 1em;
+   margin-bottom: 1em;
+   /* required for next position absolute*/
+   position: relative;
+   /* inline-block per andare a capo*/
+	display: inline-block;
+	width: 80%;
+	padding: 0.5em;
+	border: 0.1em solid #ccc;
+   border-radius: 2em;
+   background-color: rgba(0,0,0,0.8);
+}
+
+.card h3 {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.card a:hover {
+	background-color: #777777;
+}
+		
+.card a i {
+	position: absolute;
+	top: 50%;
+	left: 1em;
+	transform: translateY(-50%);
+	font-size: 20px;
+}
+
+.pattern1 {
+   --u:  8vmin;	
+	--c1: #ffa726;
+   --c2: #e59319;
+   --c3: #f1a12c;
+   --c4: #cf8b26;
+   --sh: #0006;
+   --sh2: #0002;
+   --gp: 50%/ calc(var(--u) * 2) calc(var(--u) * 2);
+   #height: 50vh;
+	background:    
+		conic-gradient(from -10deg at 60% 0%, #fff0 0 25%, var(--sh2) 28%, #fff0 31% 100%) var(--gp), 
+		conic-gradient(from -5deg at 0% calc(60% - 1px), #fff0 0, var(--sh) 0%, #fff0 4% 100%) var(--gp),    
+		conic-gradient(from 0deg at 60% calc(60% - 1px), #fff0 0 22%, var(--sh2) 25%, #fff0 25% 100%) var(--gp),     
+		conic-gradient(from 0deg at 60% calc(60% - 1px), var(--c4) 0 25%, #fff0 0 97.5%, var(--sh) 102%) var(--gp),   
+		linear-gradient(180deg, #fff0 0%, var(--sh) 10%, #fff0 10% 50%, var(--sh) 50%, #fff0 60% 101%) var(--gp),   
+		linear-gradient(180deg, #fff0 10%, var(--c3) 10% 50%, #fff0 50% 100%) var(--gp),   
+		linear-gradient(90deg, #fff0 0%, var(--sh) 10%, #fff0 10% 50%, var(--sh) 50%, #fff0 60% 100%) var(--gp),   
+		linear-gradient(90deg, #fff0 10%, var(--c2) 10% 50%, #fff0 50% 100%) var(--gp),   
+		linear-gradient(180deg, #fff0 60%, var(--c1) 60% 100%) var(--gp), #6a1c00;
+}
+
+.pattern2 {
+	#height: 50vh;
+	--sz: 10px; /*** size ***/
+	--c0: #3a1b0f;
+	--c1: #ffc56f;
+  	--c2: #d99838;
+  	--c3: #9b5e05;
+  	--ts: 50%/ calc(var(--sz) * 12.8) calc(var(--sz) * 22);
+  	background:
+		/*bottom*/
+    	conic-gradient(from 120deg at 50% 86.5%, var(--c1) 0 120deg, #fff0 0 360deg) var(--ts),
+    	conic-gradient(from 120deg at 50% 86.5%, var(--c1) 0 120deg, #fff0 0 360deg) var(--ts),
+		/*bottom dark*/
+		conic-gradient(from 120deg at 50% 74%, var(--c0) 0 120deg, #fff0 0 360deg) var(--ts),
+		/*right*/
+		conic-gradient(from 60deg at 60% 50%, var(--c1) 0 60deg, var(--c2) 0 120deg, #fff0 0 360deg) var(--ts),
+		/*left*/
+		conic-gradient(from 180deg at 40% 50%, var(--c3) 0 60deg, var(--c1) 0 120deg, #fff0 0 360deg) var(--ts),
+		/*top dark*/
+    	conic-gradient(from 0deg at 90% 35%, var(--c0) 0 90deg, #fff0 0 360deg) var(--ts),
+    	conic-gradient(from -90deg at 10% 35%, var(--c0) 0 90deg, #fff0 0 360deg) var(--ts),
+    	conic-gradient(from 0deg at 90% 35%, var(--c0) 0 90deg, #fff0 0 360deg) var(--ts),
+    	conic-gradient(from -90deg at 10% 35%, var(--c0) 0 90deg, #fff0 0 360deg) var(--ts),
+		/*top*/
+    	conic-gradient(from -60deg at 50% 13.5%, var(--c1) 0 120deg, #fff0 0 360deg) var(--ts),
+    	conic-gradient(from -60deg at 50% 13.5%, var(--c1) 0 120deg, #fff0 0 360deg) var(--ts),
+		conic-gradient(from -60deg at 50% 41%, var(--c2) 0 60deg, var(--c3) 0 120deg, #fff0 0 360deg) var(--ts),
+		var(--c0) ;
+}
+
+.pattern3 {
+	--s: 200px; /* control the size */
+  	--c: #000; /* first color */
+  
+  	--_g: #0000 8%,var(--c) 0 17%,#0000 0 58%;
+  	background: 
+   	linear-gradient(135deg,#0000 20.5%,var(--c) 0 29.5%,#0000 0) 0 calc(var(--s)/4),
+    	linear-gradient( 45deg,var(--_g)) calc(var(--s)/2) 0,
+    	linear-gradient(135deg,var(--_g),var(--c) 0 67%,#0000 0),        
+    	linear-gradient( 45deg,var(--_g),var(--c) 0 67%,#0000 0 83%,var(--c) 0 92%,#0000 0), #1095c1; /* second color */
+  		background-size: var(--s) var(--s);
+
+}
+
+
+.pattern4 {
+	background: radial-gradient(circle at top left,transparent 19%,#e3a046 20%, #e3a046 25%, transparent 21%, transparent 100%),
+		radial-gradient(circle at bottom right,transparent 19%,#e3a046 20%, #e3a046 25%, transparent 26%),
+		radial-gradient(circle at bottom left,#e3a046 25%, transparent 26%),
+		radial-gradient(circle at top right,#e3a046 25%, transparent 26%);
+   background-size: 2em 2em;
+   background-color: #000000;
+   opacity: 1
+
+}
+
+
+
+
+
+
