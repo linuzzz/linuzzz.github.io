@@ -1,7 +1,7 @@
 body {
 	margin: 0.5em;
 	#background-color: yellow;
-  	-background-color: #333;
+  	background-color: #333;
   	font-family: "Abel";
   	color: #fff;
 
@@ -20,7 +20,7 @@ footer {
 	display: grid;
 	gap: 2em;
 	padding: 1em;
-	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 	/*grid-template-rows: repeat(2, 20em);*/
 	grid-auto-rows: auto;
 	/* background-color: #333; */
