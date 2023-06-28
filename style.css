@@ -147,8 +147,42 @@ footer {
 
 }
 
+.pattern5 {
+	--s: 20px; /* size of the lines */
+   --g: 15px; /* gap between lines */
+  
+  --c1: #C02942;
+  --c2: #53777A;
+   
+  background: conic-gradient(at var(--s) calc(100% - var(--s)),#0000 270deg,var(--c1) 0) calc(var(--s) + var(--g)) 0,
+     linear-gradient(var(--c2) var(--s),#0000 0) 0 var(--g),
+     conic-gradient(at var(--s) calc(100% - var(--s)),#0000 90deg,var(--c2) 0 180deg, var(--c1) 0),
+     #ECD078;
+   background-size: calc(2*(var(--s) + var(--g))) calc(2*(var(--s) + var(--g)));
+}
 
+.pattern6 {
+  --s: 150px; /* control the size */
+  --_g: #0000 90deg,#046D8B 0;
+  background:
+    conic-gradient(from 116.56deg at calc(100%/3) 0   ,var(--_g)),
+    conic-gradient(from -63.44deg at calc(200%/3) 100%,var(--_g))
+    #2FB8AC;
+  background-size: var(--s) var(--s);
+}
 
-
-
-
+.pattern7 {
+  --s: 100px; /* control the size */
+  --c1: #80BCA3;
+  --c2: #655643;
+  
+  background:
+    radial-gradient(var(--c2) 15%,
+      #0000 17% 20%,var(--c2) 22% 25%,
+      #0000 27% 30%,var(--c2) 32% 35%,
+      #0000 37% 40%,var(--c2) 42% 45%,
+      #0000 47% 50%,var(--c2) 52% 55%, var(--c1) 57%)
+     calc(var(--s)/2) 0/var(--s) var(--s),
+    repeating-conic-gradient(var(--c2) 0 25%,var(--c1) 0 50%)
+     0 0/calc(2*var(--s)) calc(2*var(--s))
+}
