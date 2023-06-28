@@ -1,5 +1,6 @@
 body {
-	margin: 1em;
+	margin: 0.5em;
+	#background-color: yellow;
   	background-color: #333;
   	font-family: "Abel";
   	color: #fff;

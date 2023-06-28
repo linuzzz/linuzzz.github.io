@@ -34,7 +34,7 @@
 
 	function decurl(i){
 		console.log(encurllist[i]);
-		key = prompt("Please enter your key", "decryption");
+		key = prompt("Please enter your key", "");
 		decry = decrypt(encurllist[i], key);
 		window.open(decry.toString(CryptoJS.enc.Utf8));
 		return false;
@@ -58,6 +58,7 @@
 
 <script> document.write(new Date().toLocaleDateString()); </script>
 
+<!--
 <div id="ip"></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>
@@ -65,8 +66,9 @@
                 $("#ip").html("Your current ip address is: " + response.ip);
             },"json")
         </script>
-</h1>
+-->
 
+</h1>
 
 </header>
 
