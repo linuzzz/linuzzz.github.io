@@ -15,12 +15,15 @@
 
 <script type="text/javascript" >
 
-	var encurllist = ['U2FsdGVkX1/KxLA3bH594me4yDg8XizNy61Rli8iEzMpxHNP+nCf+S9cFbmymN8Oui4y3XXJiLITZdRds2IRJQ==']
+	var encurllist = ['U2FsdGVkX1+3+2ukY2kRI0H6gIu4Y4s3gTyhCCZrdtjx3kWLrxq/X+Xoh+m0QcnRPcjl4QbXxRztY+ycg38QAA==']
+	
 	
 	function encrypt(cleartext, key){
   		//var inputan = document.getElementById('inputan').value;
-		console.log(cleartext);  		
-  		return CryptoJS.AES.encrypt(cleartext, key);
+		  console.log(cleartext);  		
+		  console.log(key);
+		  out = CryptoJS.AES.encrypt(cleartext, key)
+  		console.log(out.toString());
   		
   		//document.getElementById('app').innerHTML = encrypted;
 	}	
@@ -79,29 +82,39 @@
 
 <div class="card pattern2">
 	<h3>Social</h3>
-	<a href="https://www.reddit.com/"><i class="fab fa-reddit"></i>Reddit</a>
-   <a href="https://feddit.it/"><i class="fa-solid fa-hashtag"></i></i>Feddit</a>
-   <a href="https://mastodon.bida.im/web/public/local"><i class="fab fa-mastodon"></i>Mastodon</a>
-   <a href="https://pixelfed.social/i/web"><i class="fas fa-image"></i>Pixelfed</a>
-   <a href="https://www.goodreads.com/"><i class="fab fa-goodreads"></i>Goodreads</a>
-   <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i>Facebook</a>
+	  <a href="https://feddit.it/"><i class="fa-solid fa-hashtag"></i></i>Feddit</a>
+    <a href="https://mastodon.bida.im/web/public/local"><i class="fab fa-mastodon"></i>Mastodon</a>
+    <a href="https://pixelfed.social/i/web"><i class="fas fa-image"></i>Pixelfed</a>
+    <a href="https://www.goodreads.com/"><i class="fab fa-goodreads"></i>Goodreads</a>
 </div>
 
 <div class="card pattern6">
-	<h3>News & Meteo</h3>
-	<a href="https://www.ilmeteo.it/box/previsioni.php?citta=7301&type=day1&width=600&ico=1&lang=ita&days=6&font=Tahoma&fontsize=14&bg=FFFFFF&fg=000000&bgtitle=0099FF&fgtitle=FFFFFF&bgtab=F0F0F0&fglink=1773C2"><i class="fas fa-sun"></i>Meteo Torino</a>
-   <a href="https://www.3bmeteo.com/meteo/torino"><i class="fas fa-cloud"></i>3B Meteo</a>
-	<a href="https://www.inoreader.com/folder/Torino"><i class="fas fa-rss"></i>Inoreader</a>
-   <a href="https://www.ansa.it"><i class="fas fa-newspaper"></i>Ansa</a>
+	<h3>News / Meteo / Search</h3>
+	  <a href="https://www.ilmeteo.it/box/previsioni.php?citta=7301&type=day1&width=600&ico=1&lang=ita&days=6&font=Tahoma&fontsize=14&bg=FFFFFF&fg=000000&bgtitle=0099FF&fgtitle=FFFFFF&bgtab=F0F0F0&fglink=1773C2"><i class="fas fa-sun"></i>Meteo Torino</a>
+    <a href="https://www.3bmeteo.com/meteo/torino"><i class="fas fa-cloud"></i>3B Meteo</a>
+	  <a href="https://www.inoreader.com/folder/Torino"><i class="fas fa-rss"></i>Inoreader</a>
+    <a href="https://www.ansa.it"><i class="fas fa-newspaper"></i>Ansa</a>
+    <a href="https://www.google.it"><i class="fab fa-google"></i>Google</a>
+    <a href="https://www.bing.com/"><i class="fab fa-microsoft"></i>Bing</a>
 </div>
 
 <div class="card pattern1">
 	<h3>Top Sites</h3>
-	<a href="https://www.amazon.it/"><i class="fab fa-amazon"></i>Amazon</a>
-   <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i>Whatsapp</a>
-   <a href="https://web.telegram.org/z/"><i class="fab fa-telegram"></i>Telegram</a>
-   <a href="https://www.strava.com/dashboard#_=_"><i class="fab fa-strava"></i>Strava</a>
-   <a href="#" onclick="decurl(0)"><i class="fas fa-briefcase-medical"></i>Medicine</a>
+	  <a href="https://www.amazon.it/"><i class="fab fa-amazon"></i>Amazon</a>
+    <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i>Whatsapp</a>
+    <a href="https://web.telegram.org/z/"><i class="fab fa-telegram"></i>Telegram</a>
+    <a href="https://www.strava.com/dashboard#_=_"><i class="fab fa-strava"></i>Strava</a>
+    <a href="#" onclick="decurl(0)"><i class="fas fa-briefcase-medical"></i>Medicine</a>
+    <a href="https://github.com/"><i class="fab fa-github"></i>Github</a>
+</div>
+
+<div class="card" style="background-image: url('./images/pattern4.png');opacity: 0.8;">
+	<h3>Music & Movies</h3>
+	  <a href="https://sites.google.com/view/linuzzz"><i class="fas fa-music"></i>Linuzzz Music Charts</a>
+	  <a href="https://www.last.fm/user/Linuzzz19/library"><i class="fab fa-lastfm"></i>Lastfm</a>
+    <a href="https://openscrobbler.com/"><i class="fab fa-lastfm-square"></i>Openscrobbler</a>
+    <a href="https://www.deezer.com/us/album/14343880"><i class="fab fa-deezer"></i>Deezer</a>
+    <a href="https://www.imdb.com/user/ur151366433/lists"><i class="fab fa-imdb"></i>IMDB</a>
 </div>
 
 <div class="card pattern5">
@@ -113,42 +126,29 @@
 </div>
 
 
-<div class="card" style="background-image: url('./images/pattern4.png');opacity: 0.8;">
-	<h3>Music & Movies</h3>
-	<a href="https://www.last.fm/user/Linuzzz19/library"><i class="fab fa-lastfm"></i>Lastfm</a>
-   <a href="https://openscrobbler.com/"><i class="fab fa-lastfm-square"></i>Openscrobbler</a>
-   <a href="https://www.deezer.com/us/album/14343880"><i class="fab fa-deezer"></i>Deezer</a>
-   <a href="https://www.music-map.com/"><i class="fas fa-music"></i>Similar Music</a>	
-   <a href="https://www.imdb.com/user/ur151366433/lists"><i class="fab fa-imdb"></i>IMDB</a>
-
-</div>
-
 <div class="card pattern4">
 	<h3>Tools</h3>
-	<a href="https://forum.obsidian.md/"><i class="fab fa-markdown"></i>Obsidian Forum</a>
-   <a href="https://github.com/"><i class="fab fa-github"></i>Github</a>
-   <a href="https://www.ifconfig.me"><i class="fas fa-network-wired"></i>ifconfig.me</a>
-   <a href="https://getpocket.com/saves"><i class="fab fa-get-pocket"></i>Pocket</a>	
-   <a href="https://www.unixtimestamp.com/"><i class="fas fa-clock"></i>Unix Timestamp</a>
-   
+    <a href="https://www.ifconfig.me"><i class="fas fa-network-wired"></i>ifconfig.me</a>
+    <a href="https://www.unixtimestamp.com/"><i class="fas fa-clock"></i>Unix Timestamp</a>
 </div>
 
+<!--
 <div class="card" style="background-image: url('./images/search.png');">
 	<h3>Search</h3>
-	<a href="https://www.google.it"><i class="fab fa-google"></i>Google</a>
-   <a href="https://www.bing.com/"><i class="fab fa-microsoft"></i>Bing</a>
+	
 </div>
-
+-->
 
 <div class="card" style="background: radial-gradient(circle, #e3a946 40%, transparent 41%),radial-gradient(circle at bottom left, #e3a946 20%, transparent 21%),radial-gradient(circle at bottom right, #e3a946 20%, transparent 21%),radial-gradient(circle at top left, #e3a946 20%, transparent 21%),radial-gradient(circle at top right, #e3a946 20%, transparent 21%);background-size: 2em 2em;background-color: #ffffff; opacity: 1">
 	<h3>Google</h3>
 		<a href="https://mail.google.com/mail/u/0/#inbox"><i class="fab fa-google"></i>Mail</a>
-      <a href="https://drive.google.com/"><i class="fab fa-google-drive"></i>Drive</a>
-      <a href="https://calendar.google.com/calendar/u/0/r/week"><i class="fas fa-calendar"></i>Calendar</a>
-      <a href="https://keep.google.com/u/0/"><i class="fas fa-sticky-note"></i>Keep</a>
-      <a href="https://www.google.it/maps"><i class="fas fa-map"></i>Maps</a>
+    <a href="https://drive.google.com/"><i class="fab fa-google-drive"></i>Drive</a>
+    <a href="https://calendar.google.com/calendar/u/0/r/week"><i class="fas fa-calendar"></i>Calendar</a>
+    <a href="https://keep.google.com/u/0/"><i class="fas fa-sticky-note"></i>Keep</a>
+    <a href="https://www.google.it/maps"><i class="fas fa-map"></i>Maps</a>
 		<a href="https://photos.google.com/"><i class="fas fa-image"></i>Photos</a>
-      <a href="https://translate.google.com/"><i class="fas fa-language"></i>Translate</a>
+    <a href="https://translate.google.com/"><i class="fas fa-language"></i>Translate</a>
+    <a href="https://sites.google.com/"><i class="fas fa-globe"></i>Sites</a>
 </div>
 
 <!--
@@ -156,14 +156,9 @@
 -->
 <div class="card pattern7">
 	<h3>Linux</h3>
-	<a href="https://extensions.gnome.org/"><i class="fab fa-linux"></i>Gnome Ext</a>
-   <a href="https://www.gnome-look.org/browse/"><i class="fab fa-redhat"></i>Gnome Look</a>
-   <a href="https://flathub.org/"><i class="fab fa-linux"></i>Flathub</a>
-   <a href="https://getfedora.org/"><i class="fab fa-fedora"></i>Fedora</a>
-   
-   
+	  <a href="https://flathub.org/"><i class="fab fa-linux"></i>Flathub</a>
+    <a href="https://getfedora.org/"><i class="fab fa-fedora"></i>Fedora</a>
 </div>
-
 
 <footer>
 
