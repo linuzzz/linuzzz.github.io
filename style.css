@@ -72,12 +72,12 @@ footer {
 
 .pattern1 {
    --u:  8vmin;	
-	--c1: #ffa726;
-   --c2: #e59319;
-   --c3: #f1a12c;
-   --c4: #cf8b26;
+	 --c1: #202020;
+   --c2: #404040;
+   --c3: #606060;
+   --c4: #808080;
    --sh: #0006;
-   --sh2: #0002;
+   --sh2: #0006;
    --gp: 50%/ calc(var(--u) * 2) calc(var(--u) * 2);
    #height: 50vh;
 	background:    
@@ -152,23 +152,23 @@ footer {
 	--s: 20px; /* size of the lines */
    --g: 15px; /* gap between lines */
   
-  --c1: #C02942;
-  --c2: #53777A;
+  --c1: #404040;
+  --c2: #D0D0D0;
    
   background: conic-gradient(at var(--s) calc(100% - var(--s)),#0000 270deg,var(--c1) 0) calc(var(--s) + var(--g)) 0,
      linear-gradient(var(--c2) var(--s),#0000 0) 0 var(--g),
      conic-gradient(at var(--s) calc(100% - var(--s)),#0000 90deg,var(--c2) 0 180deg, var(--c1) 0),
-     #ECD078;
+     #000000;
    background-size: calc(2*(var(--s) + var(--g))) calc(2*(var(--s) + var(--g)));
 }
 
 .pattern6 {
   --s: 150px; /* control the size */
-  --_g: #0000 90deg,#046D8B 0;
+  --_g: #0000 90deg,#000000 0;
   background:
     conic-gradient(from 116.56deg at calc(100%/3) 0   ,var(--_g)),
     conic-gradient(from -63.44deg at calc(200%/3) 100%,var(--_g))
-    #2FB8AC;
+    #808080;
   background-size: var(--s) var(--s);
 }
 
@@ -187,3 +187,62 @@ footer {
     repeating-conic-gradient(var(--c2) 0 25%,var(--c1) 0 50%)
      0 0/calc(2*var(--s)) calc(2*var(--s))
 }
+
+
+.bw {
+  background-color: #000000;
+  opacity: 0.8;
+  background-image:  linear-gradient(30deg, #7b7b7b 12%, transparent 12.5%, transparent 87%, #7b7b7b 87.5%, #7b7b7b), linear-gradient(150deg, #7b7b7b 12%, transparent 12.5%, transparent 87%, #7b7b7b 87.5%, #7b7b7b), linear-gradient(30deg, #7b7b7b 12%, transparent 12.5%, transparent 87%, #7b7b7b 87.5%, #7b7b7b), linear-gradient(150deg, #7b7b7b 12%, transparent 12.5%, transparent 87%, #7b7b7b 87.5%, #7b7b7b), linear-gradient(60deg, #7b7b7b77 25%, transparent 25.5%, transparent 75%, #7b7b7b77 75%, #7b7b7b77), linear-gradient(60deg, #7b7b7b77 25%, transparent 25.5%, transparent 75%, #7b7b7b77 75%, #7b7b7b77);
+  background-size: 32px 56px;
+  background-position: 0 0, 0 0, 16px 28px, 16px 28px, 0 0, 16px 28px;
+}
+
+.bw2 {
+  background-color: #000000;
+  opacity: 0.8;
+  background-image:  repeating-linear-gradient(45deg, #767678 25%, transparent 25%, transparent 75%, #767678 75%, #767678), repeating-linear-gradient(45deg, #767678 25%, #000000 25%, #000000 75%, #767678 75%, #767678);
+  background-position: 0 0, 16px 16px;
+  background-size: 32px 32px;
+}
+
+.bw3 {
+  background:
+      conic-gradient(at 10% 50%,#0000 75%,#6b6b6b 0),
+      conic-gradient(at 10% 50%,#0000 75%,#6b6b6b 0) calc(1*32px) calc(3*32px),
+      conic-gradient(at 10% 50%,#0000 75%,#6b6b6b 0) calc(2*32px) calc(1*32px),
+      conic-gradient(at 10% 50%,#0000 75%,#6b6b6b 0) calc(3*32px) calc(4*32px),
+      conic-gradient(at 10% 50%,#0000 75%,#6b6b6b 0) calc(4*32px) calc(2*32px),
+      conic-gradient(at 50% 10%,#0000 75%,#6b6b6b 0) 0 calc(4*32px),
+      conic-gradient(at 50% 10%,#0000 75%,#6b6b6b 0) calc(1*32px) calc(2*32px),
+      conic-gradient(at 50% 10%,#0000 75%,#6b6b6b 0) calc(2*32px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,#6b6b6b 0) calc(3*32px) calc(3*32px),
+      conic-gradient(at 50% 10%,#0000 75%,#6b6b6b 0) calc(4*32px) calc(1*32px),
+      #000000;
+  background-size: 160px 160px;
+}
+
+.bw4 {
+  background: linear-gradient(45deg,#0000 calc(25%/3), #6b6b6b 0 calc(50%/3),
+      #0000 0 calc(250%/3), #6b6b6b 0 calc(275%/3),
+      #0000 0),linear-gradient( 45deg,#6b6b6b calc(25%/3), #0000 0 calc(50%/3),
+      #6b6b6b 0 25%, #0000 0 75%,
+      #6b6b6b 0 calc(250%/3), #0000 0 calc(275%/3),
+      #6b6b6b 0),
+      linear-gradient(-45deg,#0000 calc(25%/3), #6b6b6b 0 calc(50%/3),
+      #0000 0 calc(250%/3), #6b6b6b 0 calc(275%/3),
+      #0000 0),linear-gradient(-45deg,#6b6b6b calc(25%/3), #0000 0 calc(50%/3),
+      #6b6b6b 0 25%, #0000 0 75%,
+      #6b6b6b 0 calc(250%/3), #0000 0 calc(275%/3),
+      #6b6b6b 0)
+      #000000;
+  background-size: 64px 64px;
+  background-position: 0 0, 32px  32px;
+}
+
+.bw5 {
+  background:
+      linear-gradient(135deg,#0000 18.75%,#000000 0 31.25%,#0000 0),
+      repeating-linear-gradient(45deg,#000000 -6.25% 6.25%,#6b6b6b 0 18.75%);
+  background-size: 64px 64px;
+}
+
