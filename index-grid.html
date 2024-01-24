@@ -1,0 +1,118 @@
+<!doctype html>
+
+<html>
+
+<head>
+	<title>Home Page with Grid</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <link href="style-grid.css" rel="stylesheet">
+	<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Abel'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+		
+
+<script type="text/javascript" >
+
+	var encurllist = ['U2FsdGVkX1+3+2ukY2kRI0H6gIu4Y4s3gTyhCCZrdtjx3kWLrxq/X+Xoh+m0QcnRPcjl4QbXxRztY+ycg38QAA==']
+	
+	
+	function encrypt(cleartext, key){
+  		//var inputan = document.getElementById('inputan').value;
+		  console.log(cleartext);  		
+		  console.log(key);
+		  out = CryptoJS.AES.encrypt(cleartext, key)
+  		console.log(out.toString());
+  		
+  		//document.getElementById('app').innerHTML = encrypted;
+	}	
+
+	function decrypt(hiddentext, key){
+  		//var inputan2 = document.getElementById('inputan2').value;
+  		//console.log(hiddentext, key)
+  		return CryptoJS.AES.decrypt(hiddentext, key);
+  		//document.getElementById('app2').innerHTML = decrypted.toString(CryptoJS.enc.Utf8);
+	}
+
+	function decurl(i){
+		console.log(encurllist[i]);
+		key = prompt("Please enter your key", "");
+		decry = decrypt(encurllist[i], key);
+		window.open(decry.toString(CryptoJS.enc.Utf8));
+		return false;
+		//cleartext = prompt("Please enter your text", "decryption");
+		//key = prompt("Please enter your key", "decryption");	
+		//console.log(key);
+		//enc = encrypt(cleartext, key);
+		//console.log(enc.toString(CryptoJS.enc.Utf8));
+	}
+
+
+</script>
+
+</head>
+
+<body>
+
+
+<div class="grid-container">
+  	<div class="Box1 patt1">
+  	<p>Sunrise and sunset in Turin: 
+
+	<span id="Turin_z723" style="color:#FFFFFF;"></span>
+	<script src="https://widget.time.is/it.js"></script>
+	<script>
+	time_is_widget.init({Turin_z723:
+  	{
+		template: "SUN",
+		sun_format: "srhour:srminute - sshour:ssminute",
+		coords: "45.116177,7.742615"
+		}
+  	});
+	</script>
+
+	
+  	</div>
+  	
+   <div class="Box2 bg1">box2</div>
+
+  
+  <div class="Box3">
+	
+	<div class="flex-container">
+	<h3>Top Sites</h3>  
+		<a href="https://www.ilmeteo.it/box/previsioni.php?citta=7301&type=day1&width=600&ico=1&lang=ita&days=6&font=Tahoma&fontsize=14&bg=FFFFFF&fg=000000&bgtitle=0099FF&fgtitle=FFFFFF&bgtab=F0F0F0&fglink=1773C2"><i class="fas fa-sun"></i>Meteo Torino</a>
+    	<a href="https://www.3bmeteo.com/meteo/torino"><i class="fas fa-cloud"></i>3B Meteo</a>
+    	<a href="https://www.timeanddate.com/worldclock/italy/turin"><i class="fa fa-calendar"></i>Turin Time and Zone</a>
+	 	<a href="https://www.inoreader.com/folder/Torino"><i class="fas fa-rss"></i>Inoreader</a>
+	 	<a href="https://www.amazon.it/"><i class="fab fa-amazon"></i>Amazon</a>
+    	<a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i>Whatsapp</a>
+    	<a href="https://web.telegram.org/z/"><i class="fab fa-telegram"></i>Telegram</a>
+  
+  	</div>
+  	
+  </div>  
+
+	<div class="Box4">box4</div>
+	<div class="Box5">box5</div>
+
+  	<div class="Box6">box6</div>
+  	<div class="Box7 bg1">box7</div>
+  
+  
+  	<div class="Box8 bg1">box8</div>
+  	<div class="Box9 bg1">box9</div>
+  	<div class="Box10">box10</div>
+  	<div class="Box11">box11</div>
+  	<div class="Box12 bg1">box12</div>
+  	<div class="Box13 bg1">box13</div>
+  	<div class="Box14">box14</div>
+  	<div class="Box15">box15</div>
+  	<div class="Box16">box16</div>
+</div>
+
+
+</body>
+
+</html>

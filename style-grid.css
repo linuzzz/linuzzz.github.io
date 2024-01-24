@@ -1,0 +1,312 @@
+body {
+	margin: 0.4em;
+	#background-color: yellow;
+  	background-color: #333;
+  	font-family: "Abel";
+  	color: #fff;
+}
+
+
+
+@media (min-width: 700px) {
+	.grid-container {  display: grid;
+  		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  		grid-template-rows: 1fr 1fr 1fr 1fr;
+  		gap: 2em;
+  		grid-auto-flow: row;
+  		grid-template-areas:
+    		"Box1 Box1 Box2 Box2 Box2 Box3 Box4 Box5"
+    		"Box6 Box6 Box7 Box8 Box9 Box10 Box10 Box11"
+    		"Box6 Box6 Box7 Box12 Box13 Box10 Box10 Box11"
+    		"Box14 Box14 Box14 Box15 Box15 Box16 Box16 Box16";
+    	margin:3em;
+  		opacity: 0.8;"
+  		
+	}
+}
+
+.Box1 { 
+	grid-area: Box1;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.Box2 { grid-area: Box2; }
+.Box3 { grid-area: Box3; }
+.Box4 { grid-area: Box4; }
+.Box5 { grid-area: Box5; }
+.Box6 { grid-area: Box6; }
+.Box7 { grid-area: Box7; }
+.Box8 { grid-area: Box8; }
+.Box9 { grid-area: Box9; }
+.Box10 { grid-area: Box10; }
+.Box11 { grid-area: Box11; }
+.Box12 { grid-area: Box12; }
+.Box13 { grid-area: Box13; }
+.Box14 { grid-area: Box14; }
+.Box15 { grid-area: Box15; }
+.Box16 { grid-area: Box16; }
+
+
+
+
+
+/*
+In grid-template-areas You can’t create a non-rectangular area, 
+so the property can’t be used to create an ‘L’ or ‘T’ shaped area
+*/
+
+
+/*
+The media query order is important:
+
+That's by design of CSS — Cascading Style Sheet.
+
+It means that, if you apply two rules that collide to the same elements, 
+it will choose the last one that was declared, unless the first one has the !important marker or is more specific
+
+*/
+
+
+.bg1 {
+	background-image: url('./images/bg1.jpg');
+}
+
+.bg2 {
+	background-image: url('./images/bg2.jpg');
+}
+
+.patt1 {
+	background-image: url('./images/pattern1.jpg');
+}
+
+.grid-container > div {
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 1em 0;
+ 
+}
+
+.flex-container {
+	display: flex;
+	flex-direction: column;
+	/*gap: 1em;*/
+	/*this centers the text horizontally*/
+  	/*justify-content: center;*/
+
+  	/*this centers the text vertically*/
+  	align-items: center;
+  	 
+}
+
+.flex-container a {
+	text-decoration: none;
+	text-align: center;
+	background-color: #00000066;
+	color: white;
+	border: 0.1em solid white;
+	border-radius: 0.5em;
+	margin-bottom: 0.5em;
+  	/* required for next position absolute*/
+  	position: relative;
+  	/* inline-block per andare a capo*/
+	display: inline-block;
+	width: 14em;
+}
+
+.flex-container a i {
+	position: absolute;
+	top: 50%;
+	left: 0.5em;
+	transform: translateY(-50%);
+	/*font-size: 10px;*/
+}
+
+
+
+.pattern1 {
+   --u:  8vmin;	
+	 --c1: #202020;
+   --c2: #404040;
+   --c3: #606060;
+   --c4: #808080;
+   --sh: #0006;
+   --sh2: #0006;
+   --gp: 50%/ calc(var(--u) * 2) calc(var(--u) * 2);
+   #height: 50vh;
+	background:    
+		conic-gradient(from -10deg at 60% 0%, #fff0 0 25%, var(--sh2) 28%, #fff0 31% 100%) var(--gp), 
+		conic-gradient(from -5deg at 0% calc(60% - 1px), #fff0 0, var(--sh) 0%, #fff0 4% 100%) var(--gp),    
+		conic-gradient(from 0deg at 60% calc(60% - 1px), #fff0 0 22%, var(--sh2) 25%, #fff0 25% 100%) var(--gp),     
+		conic-gradient(from 0deg at 60% calc(60% - 1px), var(--c4) 0 25%, #fff0 0 97.5%, var(--sh) 102%) var(--gp),   
+		linear-gradient(180deg, #fff0 0%, var(--sh) 10%, #fff0 10% 50%, var(--sh) 50%, #fff0 60% 101%) var(--gp),   
+		linear-gradient(180deg, #fff0 10%, var(--c3) 10% 50%, #fff0 50% 100%) var(--gp),   
+		linear-gradient(90deg, #fff0 0%, var(--sh) 10%, #fff0 10% 50%, var(--sh) 50%, #fff0 60% 100%) var(--gp),   
+		linear-gradient(90deg, #fff0 10%, var(--c2) 10% 50%, #fff0 50% 100%) var(--gp),   
+		linear-gradient(180deg, #fff0 60%, var(--c1) 60% 100%) var(--gp), #6a1c00;
+}
+
+.pattern2 {
+	#height: 50vh;
+	--sz: 10px; /*** size ***/
+	--c0: #3a1b0f;
+	--c1: #ffc56f;
+  	--c2: #d99838;
+  	--c3: #9b5e05;
+  	--ts: 50%/ calc(var(--sz) * 12.8) calc(var(--sz) * 22);
+  	background:
+		/*bottom*/
+    	conic-gradient(from 120deg at 50% 86.5%, var(--c1) 0 120deg, #fff0 0 360deg) var(--ts),
+    	conic-gradient(from 120deg at 50% 86.5%, var(--c1) 0 120deg, #fff0 0 360deg) var(--ts),
+		/*bottom dark*/
+		conic-gradient(from 120deg at 50% 74%, var(--c0) 0 120deg, #fff0 0 360deg) var(--ts),
+		/*right*/
+		conic-gradient(from 60deg at 60% 50%, var(--c1) 0 60deg, var(--c2) 0 120deg, #fff0 0 360deg) var(--ts),
+		/*left*/
+		conic-gradient(from 180deg at 40% 50%, var(--c3) 0 60deg, var(--c1) 0 120deg, #fff0 0 360deg) var(--ts),
+		/*top dark*/
+    	conic-gradient(from 0deg at 90% 35%, var(--c0) 0 90deg, #fff0 0 360deg) var(--ts),
+    	conic-gradient(from -90deg at 10% 35%, var(--c0) 0 90deg, #fff0 0 360deg) var(--ts),
+    	conic-gradient(from 0deg at 90% 35%, var(--c0) 0 90deg, #fff0 0 360deg) var(--ts),
+    	conic-gradient(from -90deg at 10% 35%, var(--c0) 0 90deg, #fff0 0 360deg) var(--ts),
+		/*top*/
+    	conic-gradient(from -60deg at 50% 13.5%, var(--c1) 0 120deg, #fff0 0 360deg) var(--ts),
+    	conic-gradient(from -60deg at 50% 13.5%, var(--c1) 0 120deg, #fff0 0 360deg) var(--ts),
+		conic-gradient(from -60deg at 50% 41%, var(--c2) 0 60deg, var(--c3) 0 120deg, #fff0 0 360deg) var(--ts),
+		var(--c0) ;
+}
+
+.pattern3 {
+	--s: 200px; /* control the size */
+  	--c: #000; /* first color */
+  
+  	--_g: #0000 8%,var(--c) 0 17%,#0000 0 58%;
+  	background: 
+   	linear-gradient(135deg,#0000 20.5%,var(--c) 0 29.5%,#0000 0) 0 calc(var(--s)/4),
+    	linear-gradient( 45deg,var(--_g)) calc(var(--s)/2) 0,
+    	linear-gradient(135deg,var(--_g),var(--c) 0 67%,#0000 0),        
+    	linear-gradient( 45deg,var(--_g),var(--c) 0 67%,#0000 0 83%,var(--c) 0 92%,#0000 0), #1095c1; /* second color */
+  		background-size: var(--s) var(--s);
+
+}
+
+
+.pattern4 {
+	background: radial-gradient(circle at top left,transparent 19%,#e3a046 20%, #e3a046 25%, transparent 21%, transparent 100%),
+		radial-gradient(circle at bottom right,transparent 19%,#e3a046 20%, #e3a046 25%, transparent 26%),
+		radial-gradient(circle at bottom left,#e3a046 25%, transparent 26%),
+		radial-gradient(circle at top right,#e3a046 25%, transparent 26%);
+   background-size: 2em 2em;
+   background-color: #000000;
+   opacity: 1
+
+}
+
+.pattern5 {
+	--s: 20px; /* size of the lines */
+   --g: 15px; /* gap between lines */
+  
+  --c1: #404040;
+  --c2: #D0D0D0;
+   
+  background: conic-gradient(at var(--s) calc(100% - var(--s)),#0000 270deg,var(--c1) 0) calc(var(--s) + var(--g)) 0,
+     linear-gradient(var(--c2) var(--s),#0000 0) 0 var(--g),
+     conic-gradient(at var(--s) calc(100% - var(--s)),#0000 90deg,var(--c2) 0 180deg, var(--c1) 0),
+     #000000;
+   background-size: calc(2*(var(--s) + var(--g))) calc(2*(var(--s) + var(--g)));
+}
+
+.pattern6 {
+  --s: 150px; /* control the size */
+  --_g: #0000 90deg,#000000 0;
+  background:
+    conic-gradient(from 116.56deg at calc(100%/3) 0   ,var(--_g)),
+    conic-gradient(from -63.44deg at calc(200%/3) 100%,var(--_g))
+    #808080;
+  background-size: var(--s) var(--s);
+}
+
+.pattern7 {
+  --s: 100px; /* control the size */
+  --c1: #80BCA3;
+  --c2: #655643;
+  
+  background:
+    radial-gradient(var(--c2) 15%,
+      #0000 17% 20%,var(--c2) 22% 25%,
+      #0000 27% 30%,var(--c2) 32% 35%,
+      #0000 37% 40%,var(--c2) 42% 45%,
+      #0000 47% 50%,var(--c2) 52% 55%, var(--c1) 57%)
+     calc(var(--s)/2) 0/var(--s) var(--s),
+    repeating-conic-gradient(var(--c2) 0 25%,var(--c1) 0 50%)
+     0 0/calc(2*var(--s)) calc(2*var(--s))
+}
+
+
+.bw {
+  background-color: #000000;
+  opacity: 0.8;
+  background-image:  linear-gradient(30deg, #7b7b7b 12%, transparent 12.5%, transparent 87%, #7b7b7b 87.5%, #7b7b7b), linear-gradient(150deg, #7b7b7b 12%, transparent 12.5%, transparent 87%, #7b7b7b 87.5%, #7b7b7b), linear-gradient(30deg, #7b7b7b 12%, transparent 12.5%, transparent 87%, #7b7b7b 87.5%, #7b7b7b), linear-gradient(150deg, #7b7b7b 12%, transparent 12.5%, transparent 87%, #7b7b7b 87.5%, #7b7b7b), linear-gradient(60deg, #7b7b7b77 25%, transparent 25.5%, transparent 75%, #7b7b7b77 75%, #7b7b7b77), linear-gradient(60deg, #7b7b7b77 25%, transparent 25.5%, transparent 75%, #7b7b7b77 75%, #7b7b7b77);
+  /*background-size: 8px 24px;*/
+  /*background-position: 0 0, 0 0, 16px 28px, 16px 28px, 0 0, 16px 28px;*/
+}
+
+
+.bw10 {
+	background: radial-gradient(#6f6f73 10%, transparent 10%, transparent 39%, #6f6f73 40%,#6f6f73 45%, transparent 46%);
+        background-size: 1em 1em;
+        background-color: #000000;
+        opacity: 0.85	
+}
+
+
+.bw2 {
+  background-color: #000000;
+  opacity: 0.8;
+  background-image:  repeating-linear-gradient(45deg, #767678 25%, transparent 25%, transparent 75%, #767678 75%, #767678), repeating-linear-gradient(45deg, #767678 25%, #000000 25%, #000000 75%, #767678 75%, #767678);
+  background-position: 0 0, 16px 16px;
+  background-size: 32px 32px;
+}
+
+.bw3 {
+  background:
+      conic-gradient(at 10% 50%,#0000 75%,#6b6b6b 0),
+      conic-gradient(at 10% 50%,#0000 75%,#6b6b6b 0) calc(1*32px) calc(3*32px),
+      conic-gradient(at 10% 50%,#0000 75%,#6b6b6b 0) calc(2*32px) calc(1*32px),
+      conic-gradient(at 10% 50%,#0000 75%,#6b6b6b 0) calc(3*32px) calc(4*32px),
+      conic-gradient(at 10% 50%,#0000 75%,#6b6b6b 0) calc(4*32px) calc(2*32px),
+      conic-gradient(at 50% 10%,#0000 75%,#6b6b6b 0) 0 calc(4*32px),
+      conic-gradient(at 50% 10%,#0000 75%,#6b6b6b 0) calc(1*32px) calc(2*32px),
+      conic-gradient(at 50% 10%,#0000 75%,#6b6b6b 0) calc(2*32px) 0,
+      conic-gradient(at 50% 10%,#0000 75%,#6b6b6b 0) calc(3*32px) calc(3*32px),
+      conic-gradient(at 50% 10%,#0000 75%,#6b6b6b 0) calc(4*32px) calc(1*32px),
+      #000000;
+  background-size: 160px 160px;
+}
+
+.bw4 {
+  background: linear-gradient(45deg,#0000 calc(25%/3), #6b6b6b 0 calc(50%/3),
+      #0000 0 calc(250%/3), #6b6b6b 0 calc(275%/3),
+      #0000 0),linear-gradient( 45deg,#6b6b6b calc(25%/3), #0000 0 calc(50%/3),
+      #6b6b6b 0 25%, #0000 0 75%,
+      #6b6b6b 0 calc(250%/3), #0000 0 calc(275%/3),
+      #6b6b6b 0),
+      linear-gradient(-45deg,#0000 calc(25%/3), #6b6b6b 0 calc(50%/3),
+      #0000 0 calc(250%/3), #6b6b6b 0 calc(275%/3),
+      #0000 0),linear-gradient(-45deg,#6b6b6b calc(25%/3), #0000 0 calc(50%/3),
+      #6b6b6b 0 25%, #0000 0 75%,
+      #6b6b6b 0 calc(250%/3), #0000 0 calc(275%/3),
+      #6b6b6b 0)
+      #000000;
+  background-size: 64px 64px;
+  background-position: 0 0, 32px  32px;
+}
+
+.bw5 {
+  background:
+      linear-gradient(135deg,#0000 18.75%,#000000 0 31.25%,#0000 0),
+      repeating-linear-gradient(45deg,#000000 -6.25% 6.25%,#6b6b6b 0 18.75%);
+  background-size: 64px 64px;
+}
+
