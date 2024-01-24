@@ -1,5 +1,5 @@
 body {
-	margin: 0.4em;
+	margin: 4em;
 	#background-color: yellow;
   	background-color: #333;
   	font-family: "Abel";
@@ -75,7 +75,6 @@ body {
 }
 
 
-
 .Box3 { grid-area: Box3; }
 
 .Box4 { 
@@ -99,20 +98,6 @@ body {
 .Box14 { grid-area: Box14; }
 .Box15 { grid-area: Box15; }
 .Box16 { grid-area: Box16; }
-
-
-#txt1 {
-	text-align: left;
-	margin-left: 1em;
-	border: 0.1em solid white;
-	border-radius: 0.5em;
-}
-
-#txt2 {
-	text-align: right;
-	
-}
-
 
 
 #text {
@@ -175,9 +160,9 @@ it will choose the last one that was declared, unless the first one has the !imp
 .flex-container a {
 	text-decoration: none;
 	text-align: center;
-	background-color: #00000066;
+	background-color: #000000AA;
 	color: white;
-	border: 0.1em solid white;
+	/*border: 0.1em solid white;*/
 	border-radius: 0.5em;
 	margin-bottom: 0.5em;
 	/*margin-left: 1em;*/
