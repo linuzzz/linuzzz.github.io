@@ -1,0 +1,266 @@
+body {
+	margin: 4em;
+	#background-color: yellow;
+  	background-color: #303030;
+  	font-family: "Abel";
+  	color: #F0F0F0;
+}
+
+
+/*
+In grid-template-areas You can’t create a non-rectangular area, 
+so the property can’t be used to create an ‘L’ or ‘T’ shaped area
+*/
+
+
+/*
+The media query order is important:
+
+That's by design of CSS — Cascading Style Sheet.
+
+It means that, if you apply two rules that collide to the same elements, 
+it will choose the last one that was declared, unless the first one has the !important marker or is more specific
+
+*/
+
+
+@media (min-width: 600px) {
+	.grid-container {  display: grid;
+  		/*grid-template-columns: 1fr 1fr;
+  		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
+  		gap: 2em;
+  		
+  		grid-template-areas:
+			"Box2 Box2"    		
+			"Box5 Box5"    		
+    		"Box1 Box1"
+    		"Box1 Box1"
+    		"Box3 Box4"
+    		"Box3 Box4"
+    		"Box6 Box7"
+    		"Box6 Box7"
+    		"Box8 Box8" 
+			"Box8 Box8"
+			"Box9 Box9"
+			"Box9 Box9"
+			"Box10 Box11" 
+			"Box12 Box13" 
+			"Box14 Box15";
+    	/*margin:3em;*/
+  		opacity: 0.8;"
+  		
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.grid-container {  display: grid;
+  		/*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;*/
+  		gap: 2em;
+		/*grid-auto-rows: minmax(200px, 3fr);*/  		
+  		grid-template-areas:
+    		"Box1 Box1 Box2 Box2 Box3 Box4"
+    		"Box1 Box1 Box5 Box5 Box3 Box4"
+    		"Box6 Box7 Box8 Box8 Box8 Box9"
+    		"Box6 Box7 Box8 Box8 Box8 Box9"
+    		"Box10 Box11 Box12 Box13 Box14 Box15";
+    	/*margin:3em;*/
+  		opacity: 0.8;"
+  		
+	}
+}
+
+.sub-grid {  display: grid;
+  		/*grid-template-columns: auto auto;
+  		grid-template-rows: auto auto;*/
+  		
+  		gap: 0.5em;
+  		
+  		grid-template-areas:
+    		"Sub1 Sub2"
+    		"Sub3 Sub4";
+    	/*margin:3em;*/
+  		opacity: 0.8;
+  		/*height: 10;*/
+			
+}
+
+@media (min-width: 400px) {
+	.sub-grid > div {
+		background-size: 40em;
+	}
+}
+
+
+@media (min-width: 600px) {
+	.sub-grid > div {
+		background-size: 44em;
+	}
+}
+	
+@media (min-width: 1200px) {
+	.sub-grid > div {
+		background-size: 40em;
+		background-repeat: no-repeat;
+	}
+}
+
+.sub-grid > div {	
+  	background-attachment: fixed;
+  	/*background-size: contain;*/
+  	/*padding: 1em 0;*/
+	/*height: 15em;*/
+	/*width: 20em;*/
+}
+
+.Sub1 {
+	grid-area: Sub1;
+	
+}
+
+.Sub2 {
+	grid-area: Sub2;
+}
+
+.Sub3 {
+	grid-area: Sub3;
+}
+
+.Sub4 {
+	grid-area: Sub4;
+}
+
+
+
+.Box1 { 
+	grid-area: Box1; 
+	
+}
+
+.Box2 { 
+	grid-area: Box2;
+	font-size: 1.5em;
+	text-align: center;
+	/*border: 0.05em solid white;*/
+	 
+}
+
+.Box5 { 
+	grid-area: Box5;
+	font-size: 1.5em;
+	text-align: center;
+	/*border: 0.05em solid white;*/
+ 
+}
+
+
+.Box3 { grid-area: Box3; }
+
+.Box4 { 
+	grid-area: Box4;
+	 
+}
+
+.Box5 { grid-area: Box5; }
+
+.Box6 { grid-area: Box6; }
+
+.Box7 { grid-area: Box7; }
+
+.Box8 { 
+	grid-area: Box8;
+	background-size: cover;
+  	background-attachment: fixed; 
+  	height: 20em;
+}
+
+.Box9 { grid-area: Box9; }
+
+.Box10 { grid-area: Box10; }
+
+.Box11 { grid-area: Box11; }
+
+.Box12 { grid-area: Box12; }
+
+.Box13 { grid-area: Box13; }
+
+.Box14 { grid-area: Box14; }
+
+.Box15 { grid-area: Box15; }
+
+
+.grid-container > div {
+	background-size: cover;
+  	background-attachment: fixed;
+	  
+}
+
+
+.bg1 {
+	background-image: url('./images/bg1.jpg');
+}
+
+.bg2 {
+	background-image: url('./images/bg2.jpg');
+}
+
+.pattern1 {
+	background-image: url('./images/pattern3.jpg');
+}
+
+
+#text {
+	padding: 0.2em;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+
+.flex-container {
+	display: flex;
+	/*display: inline-block;*/
+	flex-direction: column;
+	/*gap: 1em;*/
+  	/*justify-content: center;*/
+  	align-items: center;
+  	text-align: center;
+  	padding-bottom: 1em; 
+}
+
+
+.flex-container a {
+	text-decoration: none;
+	text-align: center;
+	background-color: #E0E0E033;
+	color: white;
+	/*border: 0.1em solid white;*/
+	/* border-radius: 0.5em; */
+	margin-bottom: 0.2em;
+	margin-left: 1em;
+	margin-right: 1em;
+  	/* required for next position absolute*/
+  	position: relative;
+  	/* inline-block per andare a capo*/
+	/*display: inline-block;*/
+	width: 14em;
+}
+
+.flex-container a:hover {
+	background-color: #777777;
+}
+
+/* Fontawesome icon position*/
+.flex-container a i {
+	position: absolute;
+	top: 50%;
+	left: 0.5em;
+	transform: translateY(-50%);
+	/*font-size: 10px;*/
+}
+
+
+
+
