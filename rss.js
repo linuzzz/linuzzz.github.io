@@ -1,6 +1,6 @@
 var simpleRSSPlugin = (function() {
 	// get all the feed containers
-	var feedsNodes = document.querySelectorAll('[data-rss-feed]');
+	var feedsNodes = document.querySelectorAll('data-rss-feed');
 	// Convert to array
 	var feeds = [].slice.call(feedsNodes);
 	console.log('data-rss-feed');
