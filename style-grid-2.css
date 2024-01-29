@@ -1,9 +1,21 @@
+
 body {
-	margin: 4em;
-	#background-color: yellow;
-  	background-color: #303030;
-  	font-family: "Abel";
-  	color: #F0F0F0;
+		margin: 0;
+  		background-color: #303030;
+  		font-family: "Abel";
+  		color: #F0F0F0;
+	}
+
+@media (min-width: 600px) {
+	body {
+		margin: 2em;	
+	}
+}
+
+@media (min-width: 800px) {
+	body {
+		margin: 4em;	
+	}
 }
 
 
@@ -28,7 +40,7 @@ it will choose the last one that was declared, unless the first one has the !imp
 	.grid-container {  display: grid;
   		/*grid-template-columns: 1fr 1fr;
   		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
-  		gap: 2em;
+  		gap: 1em;
   		
   		grid-template-areas:
 			"Box2 Box2"    		
@@ -86,9 +98,18 @@ it will choose the last one that was declared, unless the first one has the !imp
 			
 }
 
+@media (min-width: 300px) {
+	.sub-grid > div {
+		background-size: 26em;
+		background-repeat: no-repeat;
+	}
+}
+
+
 @media (min-width: 400px) {
 	.sub-grid > div {
-		background-size: 40em;
+		background-size: 30em;
+		background-repeat: no-repeat;
 	}
 }
 
@@ -116,7 +137,6 @@ it will choose the last one that was declared, unless the first one has the !imp
 
 .Sub1 {
 	grid-area: Sub1;
-	
 }
 
 .Sub2 {
@@ -130,7 +150,6 @@ it will choose the last one that was declared, unless the first one has the !imp
 .Sub4 {
 	grid-area: Sub4;
 }
-
 
 
 .Box1 { 
@@ -155,11 +174,12 @@ it will choose the last one that was declared, unless the first one has the !imp
 }
 
 
-.Box3 { grid-area: Box3; }
+.Box3 { 
+	grid-area: Box3; 
+}
 
 .Box4 { 
 	grid-area: Box4;
-	 
 }
 
 .Box5 { grid-area: Box5; }
@@ -206,7 +226,7 @@ it will choose the last one that was declared, unless the first one has the !imp
 }
 
 .pattern1 {
-	background-image: url('./images/pattern3.jpg');
+	background-image: url('./images/pattern2.jpg');
 }
 
 
@@ -245,7 +265,7 @@ h3 {
   	position: relative;
   	/* inline-block per andare a capo*/
 	/*display: inline-block;*/
-	width: 14em;
+	width: 12em;
 }
 
 .flex-container a:hover {
