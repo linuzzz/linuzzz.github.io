@@ -3,6 +3,7 @@ var simpleRSSPlugin = (function() {
 	var feedsNodes = document.querySelectorAll('[data-rss-feed]');
 	// Convert to array
 	var feeds = [].slice.call(feedsNodes);
+	console.log('wow2');
 	for (var i = 0; i < feeds.length; i++) {
 		var container = feedsNodes[i];
 		
@@ -27,6 +28,7 @@ var simpleRSSPlugin = (function() {
 	var loops = 0;
 	function handleJSON(data) {
 		if (data.feed && data.items) {
+			console.log('wow');
 			
 			var docFrag = document.createDocumentFragment();
 			for (var i = 0; i < data.items.length; i++) {
