@@ -5,6 +5,7 @@ var simpleRSSPlugin = (function() {
 	var feeds = [].slice.call(feedsNodes);
 	console.log('wow2');
 	for (var i = 0; i < feeds.length; i++) {
+		console.log('wow3');
 		var container = feedsNodes[i];
 		
 		// get feed URL
