@@ -3,7 +3,7 @@ var simpleRSSPlugin = (function() {
 	var feedsNodes = document.querySelectorAll('data-rss-feed');
 	// Convert to array
 	var feeds = [].slice.call(feedsNodes);
-	console.log('data-rss-feed');
+	console.log(feedsNodes);
 	for (var i = 0; i < feeds.length; i++) {
 		console.log('wow3');
 		var container = feedsNodes[i];
