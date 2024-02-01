@@ -42,6 +42,7 @@ footer {
 	text-decoration: none;
 	color: white;
 	font-size: 1em;
+	font-weight: bold;
    margin-bottom: 0.5em;
    /* required for next position absolute*/
    position: relative;
@@ -51,7 +52,7 @@ footer {
 	padding: 0.5em;
 	border: 0.1em solid #ccc;
    border-radius: 2em;
-   background-color: rgba(0,0,0,0.8);
+   background-color: rgba(0,0,0,0.9);
 }
 
 .card h3 {
@@ -59,7 +60,9 @@ footer {
 }
 
 .card a:hover {
-	background-color: #777777;
+	/*background-color: #777777;*/
+	background-color: rgba(210,210,210,0.7);
+	color: black;
 }
 		
 .card a i {
