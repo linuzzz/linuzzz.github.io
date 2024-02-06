@@ -1,0 +1,129 @@
+:root {
+  --bg: #282828; 
+  --bg1: #3c3836;
+  --bg2: #504945; 
+  --fg: #ebdbb2;
+  --yellow1: #d79921;
+  --yellow2: #fabd2f;
+  --black: #000000;
+  --fg1: #fbf1c7;
+  --orange: #fe8019;
+}
+
+
+.container {
+  display: grid;
+  width: 60%;
+  height: 1vh;
+  grid-template-columns: 20vw 50vw;
+  grid-template-rows: 20vh 50vh 20vh;
+  grid-gap: 1rem;
+  grid-template-areas:
+      "header header"
+      "sidebar content"
+      "footer footer";
+}
+
+@media screen and (max-width: 900px) {
+.container {
+  width: 80%;
+  grid-template-columns: 30vw 50vw;
+  grid-template-rows: 20vh 50vh 20vh;
+  grid-template-areas:
+      "header header"
+      "sidebar content"
+      "footer footer";
+  }
+}
+
+@media screen and (max-width: 650px) {
+.container {
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+      "header"
+      "sidebar"
+      "content"
+      "footer";
+  }
+}
+
+.header {
+  grid-area: header;
+  background-image: linear-gradient(90deg, var(--bg) 0%, var(--bg2) 100%);
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-image: linear-gradient(90deg, var(--bg) 0%, var(--bg2) 100%)
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+  background-image: linear-gradient(90deg, var(--bg) 0%, var(--bg2) 100%);
+}
+
+
+body {
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-family: "Anonymous Pro";
+}
+
+.item {
+  /*background-color: #1EAAFC;*/
+  /*background-image: linear-gradient(130deg, var(--bg1) 0%, var(--bg2) 100%);*/
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  color: var(--fg1);
+  border-radius: 4px;
+  border: 2px solid #171717;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+
+.link {
+  /*border: 1px;
+  border-color: yellow;
+  border-style: solid;*/
+  padding: 0.2em;
+  margin: 0.1em;
+  width: 40vw;
+}
+
+
+.content {
+  background-image: linear-gradient(90deg, var(--bg) 0%, var(--bg2) 100%);
+  display: none;
+}
+
+#tops:target, #anti:target, #music:target, #tools:target, #apps:target, #linux:target, #art:target {
+  display: flex;
+}
+
+a {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 1em;
+  margin: 0.2em;
+  text-decoration: none;
+  color: var(--fg1);
+}
+
+a:hover {
+  background-color: var(--yellow1); 
+}
+
+a.active {
+  background-color: var(--yellow2);  
+}
