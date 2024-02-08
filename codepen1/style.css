@@ -10,6 +10,15 @@
   --orange: #fe8019;
 }
 
+body {
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  /*padding: 20px;*/
+  font-family: "Anonymous Pro";
+}
+
+
 
 .container {
   display: grid;
@@ -68,17 +77,7 @@
 .footer {
   grid-area: footer;
   background-image: linear-gradient(90deg, var(--bg) 0%, var(--bg2) 100%);
-  
-  
-}
-
-
-body {
-  background-color: var(--bg);
-  /*display: flex;*/
-  /*justify-content: center;*/
-  padding: 20px;
-  font-family: "Anonymous Pro";
+ 
 }
 
 .item {
