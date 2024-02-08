@@ -13,9 +13,9 @@
 
 .container {
   display: grid;
-  width: 60%;
+  width: 60vw;
   height: 1vh;
-  grid-template-columns: 20vw 50vw;
+  grid-template-columns: 20vw 40vw;
   grid-template-rows: 20vh 50vh 20vh;
   grid-gap: 1rem;
   grid-template-areas:
@@ -24,9 +24,10 @@
       "footer footer";
 }
 
+
 @media screen and (max-width: 900px) {
 .container {
-  width: 80%;
+  width: 80vw;
   grid-template-columns: 30vw 50vw;
   grid-template-rows: 20vh 50vh 20vh;
   grid-template-areas:
@@ -38,8 +39,8 @@
 
 @media screen and (max-width: 650px) {
 .container {
-  width: 100%;
-  grid-template-columns: 1fr;
+  width: 90vw;
+  grid-template-columns: 89vw;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
       "header"
@@ -61,18 +62,21 @@
 
 .content {
   grid-area: content;
+  background-image: linear-gradient(90deg, var(--bg) 0%, var(--bg2) 100%);
 }
 
 .footer {
   grid-area: footer;
   background-image: linear-gradient(90deg, var(--bg) 0%, var(--bg2) 100%);
+  
+  
 }
 
 
 body {
   background-color: var(--bg);
-  display: flex;
-  justify-content: center;
+  /*display: flex;*/
+  /*justify-content: center;*/
   padding: 20px;
   font-family: "Anonymous Pro";
 }
@@ -86,44 +90,44 @@ body {
   border: 2px solid #171717;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
+  /* Se uso justify-content oppure align-items allora il tag <a> non copre tutta la largezza del div */
+  /*justify-content: center;*/
+  /*align-items: center;*/
+  text-align: center;
+  padding: 0.5em;
 }
-
-
-.link {
-  /*border: 1px;
-  border-color: yellow;
-  border-style: solid;*/
-  padding: 0.2em;
-  margin: 0.1em;
-  width: 40vw;
-}
-
 
 .content {
-  background-image: linear-gradient(90deg, var(--bg) 0%, var(--bg2) 100%);
   display: none;
 }
 
 #tops:target, #anti:target, #music:target, #tools:target, #apps:target, #linux:target, #art:target {
   display: flex;
+  flex-direction: column;
 }
 
 a {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  border-radius: 1em;
-  margin: 0.2em;
-  text-decoration: none;
   color: var(--fg1);
+  padding: 0.3em;
+  border-radius: 1em;
+  text-decoration: none;
+  position: relative;
+  margin-left: 1em;
+  margin-right: 1em;
+  
 }
-
+  
 a:hover {
   background-color: var(--yellow1); 
 }
 
 a.active {
   background-color: var(--yellow2);  
+}
+
+i {
+  position: absolute;
+  top: 0.38em;
+	left: 1em;
+  
 }
