@@ -13,7 +13,7 @@ Step 3: Select the layout panel, and then select the overlay grid you'd like to 
 */
 
 $("a").on("click", function () {
-  console.log('Hello world!');
+  //console.log('Hello world!');
   $("a").removeClass('active');
   $(this).addClass('active');
 });
