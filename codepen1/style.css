@@ -100,7 +100,7 @@ body {
   display: none;
 }
 
-#tops:target, #anti:target, #music:target, #tools:target, #apps:target, #linux:target, #art:target {
+#tops:target, #anti:target, #music:target, #tools:target, #apps:target, #linux:target, #art:target, #math:target {
   display: flex;
   flex-direction: column;
 }
