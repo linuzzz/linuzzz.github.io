@@ -67,10 +67,10 @@ footer {
 		
 .card a i {
 	position: absolute;
-	top: 50%;
+	top: 30%;
 	left: 1em;
-	transform: translateY(-50%);
-	font-size: 20px;
+	/*transform: translateY(-50%);*/
+	/*font-size: 20px;*/
 }
 
 .pattern1 {
@@ -194,7 +194,7 @@ footer {
 
 .bw {
   background-color: #000000;
-  opacity: 0.8;
+  /*opacity: 0.8;*/
   background-image:  linear-gradient(30deg, #7b7b7b 12%, transparent 12.5%, transparent 87%, #7b7b7b 87.5%, #7b7b7b), linear-gradient(150deg, #7b7b7b 12%, transparent 12.5%, transparent 87%, #7b7b7b 87.5%, #7b7b7b), linear-gradient(30deg, #7b7b7b 12%, transparent 12.5%, transparent 87%, #7b7b7b 87.5%, #7b7b7b), linear-gradient(150deg, #7b7b7b 12%, transparent 12.5%, transparent 87%, #7b7b7b 87.5%, #7b7b7b), linear-gradient(60deg, #7b7b7b77 25%, transparent 25.5%, transparent 75%, #7b7b7b77 75%, #7b7b7b77), linear-gradient(60deg, #7b7b7b77 25%, transparent 25.5%, transparent 75%, #7b7b7b77 75%, #7b7b7b77);
   background-size: 32px 56px;
   background-position: 0 0, 0 0, 16px 28px, 16px 28px, 0 0, 16px 28px;
@@ -202,7 +202,7 @@ footer {
 
 .bw2 {
   background-color: #000000;
-  opacity: 0.8;
+  /*opacity: 0.8;*/
   background-image:  repeating-linear-gradient(45deg, #767678 25%, transparent 25%, transparent 75%, #767678 75%, #767678), repeating-linear-gradient(45deg, #767678 25%, #000000 25%, #000000 75%, #767678 75%, #767678);
   background-position: 0 0, 16px 16px;
   background-size: 32px 32px;
