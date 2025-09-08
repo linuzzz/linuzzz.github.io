@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Home Page</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   <link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Abel'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+		
+
+<script type="text/javascript" >
+
+	var encurllist = ['U2FsdGVkX1+3+2ukY2kRI0H6gIu4Y4s3gTyhCCZrdtjx3kWLrxq/X+Xoh+m0QcnRPcjl4QbXxRztY+ycg38QAA==']
+	
+	
+	function encrypt(cleartext, key){
+  		//var inputan = document.getElementById('inputan').value;
+		  console.log(cleartext);  		
+		  console.log(key);
+		  out = CryptoJS.AES.encrypt(cleartext, key)
+  		console.log(out.toString());
+  		
+  		//document.getElementById('app').innerHTML = encrypted;
+	}	
+
+	function decrypt(hiddentext, key){
+  		//var inputan2 = document.getElementById('inputan2').value;
+  		//console.log(hiddentext, key)
+  		return CryptoJS.AES.decrypt(hiddentext, key);
+  		//document.getElementById('app2').innerHTML = decrypted.toString(CryptoJS.enc.Utf8);
+	}
+
+	function decurl(i){
+		console.log(encurllist[i]);
+		key = prompt("Please enter your key", "");
+		decry = decrypt(encurllist[i], key);
+		window.open(decry.toString(CryptoJS.enc.Utf8));
+		return false;
+		//cleartext = prompt("Please enter your text", "decryption");
+		//key = prompt("Please enter your key", "decryption");	
+		//console.log(key);
+		//enc = encrypt(cleartext, key);
+		//console.log(enc.toString(CryptoJS.enc.Utf8));
+	}
+
+
+</script>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>
+
+<script> document.write(new Date().toLocaleDateString()); </script>
+
+<p>Sunrise and sunset in Turin: 
+
+<span id="Turin_z723" style="color:#FFFFFF;"></span>
+<script src="https://widget.time.is/it.js"></script>
+<script>
+time_is_widget.init({Turin_z723:
+  {
+		template: "SUN",
+		sun_format: "srhour:srminute - sshour:ssminute",
+		coords: "45.116177,7.742615"
+		}
+  });
+</script>
+
+
+
+<!--
+<div id="ip"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            $.get("https://ipinfo.io", function(response){
+                $("#ip").html("Your current ip address is: " + response.ip);
+            },"json")
+        </script>
+-->
+
+</h1>
+
+</header>
+
+<div class="cards">
+<!--
+<div class="card" style="background-image: url('./images/goo.png');">
+-->
+
+<div class="card bw">
+	<h3>Top Sites</h3>
+	   	<a href="https://www.inoreader.com/folder/Torino"><i class="fas fa-rss"></i>Inoreader</a>
+	 	<a href="https://www.timeanddate.com/worldclock/italy/turin"><i class="fa fa-calendar"></i>Turin Time and Zone</a>
+	    <a href="https://www.ilmeteo.it/box/previsioni.php?citta=7301&type=day1&width=600&ico=1&lang=ita&days=6&font=Tahoma&fontsize=14&bg=FFFFFF&fg=000000&bgtitle=0099FF&fgtitle=FFFFFF&bgtab=F0F0F0&fglink=1773C2"><i class="fas fa-sun"></i>Meteo Torino</a>
+	    <a href="https://www.3bmeteo.com/meteo/torino"><i class="fas fa-cloud"></i>3B Meteo</a>
+		<a href="https://www.amazon.it"><i class="fa-brands fa-amazon"></i>Amazon</a>
+		<a href="https://ilmanifesto.it/"><i class="fa-solid fa-newspaper"></i>il manifesto</a>
+		<a href="https://www.ilfattoquotidiano.it/"><i class="fa-solid fa-newspaper"></i>Il Fatto Quotidiano</a>
+</div>
+
+<!--
+<div class="card bw7">
+	<h3>Meteo</h3>
+	<a href="https://www.meteoeradar.it/pagina-meteo/torino/14623829"><i class="fas fa-satellite-dish"></i>Meteo & Radar</a>
+	<a href="https://www.meteoam.it/it/home"><i class="fas fa-tornado"></i>Meteo AM</a>
+	<a href="https://www.accuweather.com/en/it/severe-weather"><i class="fas fa-temperature-half"></i>AccuWeather Severe Map</a>
+	
+</div>
+-->
+
+<div class="card" style="background: radial-gradient(circle, #606060 40%, transparent 41%),radial-gradient(circle at bottom left, #C0C0C0 20%, transparent 21%),radial-gradient(circle at bottom right, #E0E0E0 20%, transparent 21%),radial-gradient(circle at top left, #404040 20%, transparent 21%),radial-gradient(circle at top right, #FFFFFF 20%, transparent 21%);background-size: 2em 2em;background-color: #000000; opacity: 1">
+	<h3>Math & Games</h3>
+	<a href="https://sudoku.jull.dev/"><i class="fa-solid fa-border-none"></i>Sudoku</a>
+    <a href="https://api.razzlepuzzles.com/2048?locale=it"><i class="fa-solid fa-brain"></i>2048</a>
+    <a href="https://wordly.org/it"><i class="fa-solid fa-file-word"></i>Wordle</a>
+	<a href="https://www.solitalian.it/"><i class="fa-solid fa-diamond"></i>Solitario</a>
+	<a href="https://www.desmos.com/calculator"><i class="fa-solid fa-chart-line"></i>Graphic Calc</a>
+	<a href="https://www.wolframalpha.com/"><i class="fas fa-calculator"></i>WolframAlpha Calc</a>
+</div>
+
+
+<div class="card bw5">
+	<h3>AntiSocial</h3>
+    <a href="https://infosec.exchange"><i class="fab fa-mastodon"></i></i>Infosec</a>
+	<a href="https://www.reddit.com"><i class="fa-brands fa-reddit"></i></i>Reddit</a>
+  	<a href="https://pixelfed.social/i/web/profile/425027688081226442"><i class="fas fa-image"></i>Pixelfed Portfolio</a>
+    <a href="https://log.livellosegreto.it/me/c/"><i class="fas fa-pen-nib"></i>Log LivelloSegreto</a>
+    <a href="https://log.livellosegreto.it/highway-to-shell/"><i class="fas fa-pen-nib"></i>Highway to Shell</a>
+    <a href="https://linksta.cc/@paolinus"><i class="fas fa-link"></i>LinkStack</a>    
+	<a href="https://eggplant.place/users/Paolinus/"><i class="fas fa-database"></i>NeoDB</a>    
+
+</div>
+
+
+<!-- <div class="card" style="background-image: url('./images/pattern4.png');opacity: 0.8;"> -->
+<div class="card bw2">
+	<h3>Music & Movies</h3>
+	 	<a href="https://www.last.fm/user/Linuzzz19/library"><i class="fab fa-lastfm"></i>Lastfm</a>
+		<a href="https://radiolise.com"><i class="fas fa-radio"></i>Radiolise</a>
+   		<a href="https://openscrobbler.com/"><i class="fab fa-lastfm-square"></i>Openscrobbler</a>
+   		<a href="https://onlineradiobox.com/it/nostalgiapiemonte/playlist/"><i class="fas fa-radio"></i>Radio Nostalgia</a>
+   		<a href="https://onlineradiobox.com/it/nbcmilano/playlist/"><i class="fas fa-radio"></i>Radio 70-80</a>
+   		<a href="https://play.rtl.it/live/2/rtl-1025-best-tv/"><i class="fas fa-radio"></i>RTL Best</a>
+		<a href="https://letterboxd.com/linuzzz/films/"><i class="fa-brands fa-letterboxd"></i>Letterboxd</a>   
+		
+</div>
+
+<div class="card bw4">
+	<h3>Books</h3>
+	 	<a href="https://app.thestorygraph.com/books-read/paolinus"><i class="fa-solid fa-book"></i>Storygraph</a>
+		<a href="https://www.goodreads.com/review/list/142013747-paolo?shelf=read"><i class="fa-solid fa-book"></i>Goodreads</a>
+		<a href="https://www.lafeltrinelli.it/"><i class="fa-solid fa-book"></i>La Feltrinelli</a>
+		<a href="https://www.kobo.com/it/it"><i class="fa-solid fa-book"></i>Kobo</a>
+		<a href="https://bct.medialibrary.it/media/esplora.aspx"><i class="fa-solid fa-book"></i>BCT</a>
+</div>
+
+
+<div class="card bw3">
+	<h3>Tools</h3>
+    <a href="https://www.ifconfig.me"><i class="fas fa-network-wired"></i>ifconfig.me</a>
+    <a href="https://whatismyviewport.com/"><i class="fa-solid fa-eye"></i>viewport</a>
+    <a href="https://www.unixtimestamp.com/"><i class="fas fa-clock"></i>Unix Timestamp</a>
+    <a href="https://www.rapidtables.com/tools/alarm-clock.html"><i class="fas fa-clock"></i>Alarm & Clock</a>
+    <a href="https://hat.sh/"><i class="fas fa-wrench"></i>File Encryption</a> 
+    <a href="https://librespeed.org/"><i class="fa fa-space-shuttle"></i>LibreSpeed</a>
+    <a href="https://www.rapidtables.com/web/color/RGB_Color.html"><i class="fas fa-paint-roller"></i>RGB Palette</a>
+    
+</div>
+
+
+<!--
+<div class="card pattern5">
+	<h3>Apps</h3>
+	  
+	  <a href="http://www.viaggiatreno.it/vt_pax_internet/mobile/numero?lang=IT"><i class="fas fa-train"></i>Cerca Treno</a>
+	  <a href="http://www.viaggiatreno.it/"><i class="fa fa-train"></i>Viaggia in treno</a>
+	  <a href="https://www.icloud.com/find"><i class="fab fa-apple"></i>iCloud Find</a>
+	  <a href="https://www.gtt.to.it/cms/percorari/arrivi?palina=3437"><i class="fas fa-bus"></i>GTT - 58 -> centro</a>
+</div>
+-->
+
+<!-- <div class="card" style="background-image: url('./images/search.png');"> -->
+
+
+
+<!--
+<div class="card" style="background-image: url('./images/pattern8.png');opacity: 0.8;">
+-->
+<div class="card pattern6">
+	<h3>Linux & Dev</h3>
+	  	<a href="https://flathub.org/"><i class="fab fa-linux"></i>Flathub</a>
+    	<a href="https://fedoraproject.org/start"><i class="fab fa-fedora"></i>Fedora</a>
+    	<a href="https://github.com/"><i class="fab fa-github"></i>Github</a>
+    	<a href="https://codepen.io/your-work"><i class="fab fa-codepen"></i>Codepen</a>
+    	<a href="https://www.cssportal.com/"><i class="fa-brands fa-css3-alt"></i>CSS Portal</a>
+	
+</div>
+
+<div class="card bw4">
+	<h3>Art</h3>
+		<a href="https://www.pexels.com/search/abstract/"><i class="fas fa-images"></i>Pexels</a>
+    	<a href="https://wallhaven.cc/"><i class="fas fa-image"></i>Wallhaven</a>
+    	<a href="https://www.artstation.com/nyxcomposer"><i class="fab fa-artstation"></i>Artstation</a>
+    	<a href="https://unsplash.com/s/photos/abstract?order_by=latest"><i class="fab fa-unsplash"></i>Unsplash</a>
+    	<a href="https://wallpapercave.com/"><i class="fas fa-image"></i>Wallpaper Cave</a>
+		<a href="https://alphacoders.com/"><i class="fas fa-image"></i>Alphacoders</a>
+</div>
+
+
+<footer>
+
+<!-- 
+<iframe width="300" height="200"
+src="https://not-ytb.blocus.ch/embed/Yq2jJLswL8I">
+</iframe>
+<iframe width="300" height="200"
+src="https://www.youtube.com/embed/GqjUHB6hf9s">
+</iframe>  
+<iframe width="300" height="200"
+src="https://www.youtube.com/embed/g1pahozFjK0">
+</iframe>
+<iframe width="300" height="200"
+src="https://www.youtube.com/embed/gAMjyYE_etk">
+</iframe>
+<iframe width="300" height="200"
+src="https://www.youtube.com/embed/j7sTHoeH0eA">
+</iframe>
+<iframe width="300" height="200"
+src="https://www.youtube.com/embed/n9MgJ_VTpb0">
+</iframe>
+<iframe width="300" height="200"
+src="https://www.youtube.com/embed/W4etGf2PJcA">
+</iframe>
+-->
+
+</footer>
+
+</body>
+
+</html>
