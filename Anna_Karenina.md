@@ -73,7 +73,7 @@ Rappresenta la nobiltà di Mosca, più rilassata ma finanziariamente instabile.
 
 Rappresenta la ricerca spirituale e la vita rurale, in contrapposizione alla città.
 
-* **Konstantin "Kostja" Levin:** Co-protagonista (alter ego di Tolstoj). Proprietario terriero che cerca il senso della vita nel lavoro e nella terra.
+* **Konstantin "Kostja" Levin:** Co-protagonista (alter ego di Tolstoj). Proprietario terriero che cerca il senso della vita nel lavoro e nella terra. Sergej Koznyšev è il fratellastro da parte di madre...filosofo?Hanno anche un altro fratellastro Nikolaj che è un poco di buono
 * **Ekaterina "Kitty" Ščerbackaja:** Sorella di Dolly. Inizialmente innamorata di Vronskij, diventerà la moglie di Levin.
 * **Nikolaj Levin:** Fratello malato e ribelle di Konstantin, rappresenta il volto tragico della povertà e della morte.
 
@@ -93,5 +93,8 @@ Rappresenta la ricerca spirituale e la vita rurale, in contrapposizione alla cit
 ---
 >[!Quote]
 > Lui (Levin) e il principe Ščerbackij, il fratello di Kitty e Dolly, si erano preparati insieme e insieme erano entrati all’università. Dunque Levin aveva frequentato casa Ščerbackij e di casa Ščerbackij si era innamorato. Perché, per quanto possa sembrare strano, si era innamorato proprio della casa, della famiglia e della sua metà femminile in particolare. Non avendo memoria della madre e con un’unica sorella molto piú grande di lui, dagli Ščerbackij Levin aveva conosciuto per la prima volta il calore di una famiglia rispettabile e colta che la morte dei genitori gli aveva negato
+
+Levin innamoratissimo di Kitty
+>Scese in pista, ma evitò di guardarla troppo a lungo come troppo a lungo si evita di guardare il sole. Come con il sole, però, sapeva che c’era anche senza guardarla.
 
 
