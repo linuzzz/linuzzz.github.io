@@ -91,7 +91,7 @@ Rappresenta la ricerca spirituale e la vita rurale, in contrapposizione alla cit
 > **Nota tematica:** Mentre la storia di **Anna e Vronskij** scende verso l'oscurità e l'isolamento, quella di **Levin e Kitty** sale verso la luce e la comprensione spirituale. Tolstoj usa questo parallelismo per esplorare cosa renda un matrimonio "felice" o "infelice".
 
 ---
-
-Ti interesserebbe approfondire l'analisi di uno di questi personaggi in particolare, magari concentrandoci sull'evoluzione psicologica di Levin o di Anna?
+>[!Quote]
+> Lui (Levin) e il principe Ščerbackij, il fratello di Kitty e Dolly, si erano preparati insieme e insieme erano entrati all’università. Dunque Levin aveva frequentato casa Ščerbackij e di casa Ščerbackij si era innamorato. Perché, per quanto possa sembrare strano, si era innamorato proprio della casa, della famiglia e della sua metà femminile in particolare. Non avendo memoria della madre e con un’unica sorella molto piú grande di lui, dagli Ščerbackij Levin aveva conosciuto per la prima volta il calore di una famiglia rispettabile e colta che la morte dei genitori gli aveva negato
 
 
