@@ -48,6 +48,8 @@ Karenin–Anna–Vronskij → passione, scandalo, rottura sociale.
 
 Levin–Kitty → stabilità, crescita, ricerca di senso.
 
+La madre di Kitty
+> Quante paure da vincere, quanti pensieri da affrontare, quanto denaro da spendere e quante liti con il marito le era costato maritare le due maggiori, Dar´ja e Natal´ja!
 
 ---
                            
