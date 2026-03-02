@@ -44,11 +44,12 @@ Levin e Stiva sono amici di lunga data, creando un ponte narrativo tra i due mon
 
 Le due famiglie rappresentano due modelli opposti:
 
-    Karenin–Anna–Vronskij → passione, scandalo, rottura sociale.
+Karenin–Anna–Vronskij → passione, scandalo, rottura sociale.
 
-    Levin–Kitty → stabilità, crescita, ricerca di senso.
+Levin–Kitty → stabilità, crescita, ricerca di senso.
 
-                           
+
+---
                            
                            
                            
