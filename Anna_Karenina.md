@@ -1,3 +1,57 @@
+Principe e Principessa Ščerbatskij
+│
+├── Dolly (Dar'ja Aleksandrovna)
+│     │
+│     └── Sposa Stiva (Stepan Arkad'ič Oblonskij)
+│           ├── Numerosi figli (non tutti nominati)
+│           └── Famiglia in crisi per i tradimenti di Stiva
+│
+└── Kitty (Ekaterina Aleksandrovna)
+      │
+      └── Sposa Konstantin Dmitrič Levin
+            └── 1 figlio (Dmitrij)
+
+
+Aleksej Aleksandrovič Karenin
+│
+└── Sposa Anna Arkad'evna Karenina
+      │
+      ├── Serëža (Sergej) – figlio di Anna e Karenin
+      │
+      └── Relazione con Aleksej Kirillovič Vronskij
+             └── Anna e Vronskij hanno una figlia (Annie)
+
+
+Anna Karenina ── sposata con ── Karenin
+      │
+      ├── Serëža (figlio)
+      └── relazione con Vronskij → Annie (figlia)
+
+Anna = sorella di Stiva Oblonskij
+Stiva ── sposato con ── Dolly Ščerbatskaja
+      └── vari figli
+
+Dolly = sorella di Kitty
+Kitty ── sposata con ── Levin
+      └── Dmitrij (figlio)
+
+
+Anna è sorella di Stiva Oblonskij, quindi zia dei suoi figli.
+
+Kitty inizialmente è innamorata di Vronskij, prima che lui si leghi ad Anna.
+
+Levin e Stiva sono amici di lunga data, creando un ponte narrativo tra i due mondi.
+
+Le due famiglie rappresentano due modelli opposti:
+
+    Karenin–Anna–Vronskij → passione, scandalo, rottura sociale.
+
+    Levin–Kitty → stabilità, crescita, ricerca di senso.
+
+                           
+                           
+                           
+                           
                            ┌────────────────────┐
                            │   ANNA KARENINA    │
                            └────────────────────┘
