@@ -97,4 +97,5 @@ Rappresenta la ricerca spirituale e la vita rurale, in contrapposizione alla cit
 Levin innamoratissimo di Kitty
 >Scese in pista, ma evitò di guardarla troppo a lungo come troppo a lungo si evita di guardare il sole. Come con il sole, però, sapeva che c’era anche senza guardarla.
 
+Rivale di Levin: Vronskij, figlio del conte Kirill Ivanovič Vronskij, rampollo della jeunesse dorée di Pietroburgo, è ricco sfondato, bello, ha relazioni importanti, è aiutante di campo dell’imperatore e, come se non bastasse, è anche un bravo ragazzo. 
 
