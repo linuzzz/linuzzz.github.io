@@ -58,7 +58,40 @@ Levin è proprio un profilo che si distingue dagli altri personaggi.
 | Sergey | Ivanovich | Koznyshev | — | Fratello di **Konstantin Levin**; intellettuale e figura pubblica, spesso contrapposto a Levin per idee e stile di vita.   [SparkNotes](https://www.sparknotes.com/lit/anna/characters/)  [LitCharts](https://www.litcharts.com/lit/anna-karenina/characters/nikolai-dmitrich-levin) |
 
 
+
+
 >Anna leggeva e capiva quanto stava leggendo, ma la lettura – il riflesso sulla carta di vite altrui – non le procurava alcun piacere.
+
+
+
+La **contessa Lidija Ivanovna** in *Anna Karenina* è una figura dell’alta società pietroburghese che svolge un ruolo importante soprattutto nella vita di **Aleksej Karenin** dopo la crisi del suo matrimonio. È un personaggio secondario, ma Tolstoj la usa per mostrare un certo tipo di ambiente mondano, moralista e ipocrita.
+
+---
+
+### Chi è la contessa Lidija Ivanovna
+- Una **nobile influente** e molto presente nei salotti pietroburghesi.  
+- È descritta come una donna **sentimentale, devota, incline al misticismo** e alle mode spirituali dell’epoca.  
+- Ha una personalità che unisce **compassione ostentata** e **bisogno di sentirsi moralmente superiore**.
+
+---
+
+### Il suo ruolo nella storia
+- Diventa una sorta di **guida spirituale e morale** per Karenin dopo il crollo del suo matrimonio con Anna.  
+- Lo incoraggia a vedere la sua sofferenza come una prova religiosa e lo spinge verso un atteggiamento di **martirio** e **auto-commiserazione**.  
+- È lei a favorire l’avvicinamento di Karenin a **predicatori, mistici e circoli religiosi**, che Tolstoj presenta con una certa ironia.
+
+---
+
+### Perché è importante nel romanzo
+- Rappresenta la **società ipocrita** che giudica Anna ma accoglie Karenin come vittima esemplare.  
+- Mostra come Karenin, fragile e bisognoso di approvazione, possa essere facilmente influenzato.  
+- Funziona come **contrasto** rispetto a personaggi più autentici e complessi, come Anna o Levin.
+
+---
+
+### Come Tolstoj la tratteggia
+Tolstoj la descrive con una certa ironia: è sinceramente convinta della propria bontà, ma spesso appare **vanitosa, teatrale e manipolatrice**, più interessata alla propria immagine morale che al bene degli altri.
+
 
 ---
 
