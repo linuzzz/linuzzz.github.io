@@ -7,6 +7,10 @@ Si sente tutto l'odore (anche di letame) della campagna tramite le pagine di Tol
 Levin
 >Ricordava appena sua madre. Ma il ricordo di lei era sacro, per Levin, e nella sua mente colei che avrebbe sposato avrebbe dovuto rinnovare l’ideale di donna – sacro anch’esso e magnifico – che la madre era stata per lui.
 
+A conferma della mia preferenza per Levin c'è il suo rapporto con la cana, Laska :-)
+
+Bella la serata che passa ritornato a casa, leggendo un libro su elettricità e calore, pensando alla vacca che ha partorito e ad al futuro con una donna con cui mettere su famiglia.
+Levin è proprio un profilo che si distingue dagli altri personaggi.
 
 ---
 
@@ -53,6 +57,8 @@ Levin
 | Nikolai | Dmitrich | Levin | — | Fratello di **Konstantin Levin**; malato, cade nella dipendenza e muore, evento che turba profondamente Levin.   [LitCharts](https://www.litcharts.com/lit/anna-karenina/characters/nikolai-dmitrich-levin)  [CliffsNotes](https://www.cliffsnotes.com/literature/a/anna-karenina/character-list) |
 | Sergey | Ivanovich | Koznyshev | — | Fratello di **Konstantin Levin**; intellettuale e figura pubblica, spesso contrapposto a Levin per idee e stile di vita.   [SparkNotes](https://www.sparknotes.com/lit/anna/characters/)  [LitCharts](https://www.litcharts.com/lit/anna-karenina/characters/nikolai-dmitrich-levin) |
 
+
+>Anna leggeva e capiva quanto stava leggendo, ma la lettura – il riflesso sulla carta di vite altrui – non le procurava alcun piacere.
 
 ---
 
