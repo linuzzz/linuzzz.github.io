@@ -1,6 +1,57 @@
 Bello il ritorno di Levin alla campagna, dopo il rifiuto di Kitty, lontano dalla città e dai formalismi dell'alta borghesia Levin ritrova il suo mondo più operoso e autentico
 >Anche i discorsi del fratello sul comunismo, che lí per lí aveva preso alla leggera, ora lo costringevano a riflettere
 
+Il personaggio di Levin è il mio preferito...e si mette anche nello studio a fare pesi!!!
+Si sente tutto l'odore (anche di letame) della campagna tramite le pagine di Tolstoj
+
+Levin
+>Ricordava appena sua madre. Ma il ricordo di lei era sacro, per Levin, e nella sua mente colei che avrebbe sposato avrebbe dovuto rinnovare l’ideale di donna – sacro anch’esso e magnifico – che la madre era stata per lui.
+
+
+---
+
+### Personaggi principali di *Anna Karenina* (nome, patronimico, cognome, soprannome, parentela)
+
+| **Nome** | **Patronimico** | **Cognome** | **Soprannome** | **Parentela / legami principali** |
+|---|---:|---|---|---|
+| Anna | Arkadyevna | Karenina | — | Moglie di **Alexei Alexandrovich Karenin**; sorella di **Stepan Oblonsky** |
+| Alexei | Alexandrovich | Karenin | — | Marito di **Anna Karenina**; padre di **Sergei (Seriozha)** |
+| Sergei | Alexeyitch | Karenin | **Seriozha** | Figlio di **Anna** e **Karenin** |
+| Stepan | Arkadyevitch | Oblonsky | **Stiva** | Fratello di **Anna Karenina**; marito di **Darya (Dolly) Oblonskaya** |
+| Darya | Alexandrovna | Oblonskaya | **Dolly** | Moglie di **Stepan Oblonsky** |
+| Konstantin | Dmitrievich | Levin | **Kostya** | Amico di **Stepan Oblonsky**; marito di **Ekaterina (Kitty) Shcherbatskaya** |
+| Ekaterina | Alexandrovna | Shcherbatskaya | **Kitty** | Sorella nella famiglia Shcherbatsky; moglie di **Konstantin Levin** |
+| Alexei | Kirillovich | Vronsky | **Vronsky**; talvolta *Alyosha* | Amante di **Anna Karenina**; ufficiale dell'esercito |
+| Sergey | Ivanovich | Koznyshev | — | Fratello di **Konstantin Levin**; intellettuale e figura pubblica |
+
+---
+
+
+### Personaggi secondari aggiunti (nome, patronimico, cognome, soprannome, parentela o legami principali)
+
+| **Nome** | **Patronimico** | **Cognome** | **Soprannome** | **Parentela / legami principali** |
+|---|---:|---|---|---|
+| Princess | — | Shcherbatskaya | — | Madre di **Ekaterina (Kitty) Shcherbatskaya**; figura della famiglia Shcherbatsky. |
+| Prince | — | Shcherbatsky | — | Padre di **Kitty**; capofamiglia della casa Shcherbatsky. |
+| Princess | — | Tverskaya | **Betsy** | Amica mondana di **Anna Karenina**; influente nella società di San Pietroburgo. |
+| Countess | — | Vronskaya | — | Madre di **Alexei Vronsky**. |
+| Mademoiselle | — | Roland | — | Governante/istitutrice presente nella casa Shcherbatsky. |
+| Matvey | — | — | — | Valletto di **Stepan Oblonsky** (Stiva). |
+| Marya | Philimonovna | — | — | Infermiera e balia; figura domestica nelle famiglie. |
+| Miss | — | Hoole | — | Governante inglese nella casa di **Stepan Oblonsky**. |
+| Kalinin | — | — | — | Capitano di stato maggiore; personaggio minore legato all'ambiente militare. |
+| Friedrich | — | von Beust | — | Statista straniero menzionato nel romanzo; figura politica. |
+| Philip | Ivanitch | Nikitin | — | Collega di **Stepan Oblonsky**; funzionario. |
+| Michael | Grinevitch | — | — | Collega di **Stepan Oblonsky**; personaggio minore della cerchia sociale. |
+
+---
+
+### Fratelli di Levin aggiunti alla tabella
+
+| **Nome** | **Patronimico** | **Cognome** | **Soprannome** | **Parentela / legami principali** |
+|---|---:|---|---|---|
+| Nikolai | Dmitrich | Levin | — | Fratello di **Konstantin Levin**; malato, cade nella dipendenza e muore, evento che turba profondamente Levin.   [LitCharts](https://www.litcharts.com/lit/anna-karenina/characters/nikolai-dmitrich-levin)  [CliffsNotes](https://www.cliffsnotes.com/literature/a/anna-karenina/character-list) |
+| Sergey | Ivanovich | Koznyshev | — | Fratello di **Konstantin Levin**; intellettuale e figura pubblica, spesso contrapposto a Levin per idee e stile di vita.   [SparkNotes](https://www.sparknotes.com/lit/anna/characters/)  [LitCharts](https://www.litcharts.com/lit/anna-karenina/characters/nikolai-dmitrich-levin) |
 
 
 ---
