@@ -1,3 +1,10 @@
+Bello il ritorno di Levin alla campagna, dopo il rifiuto di Kitty, lontano dalla città e dai formalismi dell'alta borghesia Levin ritrova il suo mondo più operoso e autentico
+>Anche i discorsi del fratello sul comunismo, che lí per lí aveva preso alla leggera, ora lo costringevano a riflettere
+
+
+
+---
+
 Principe e Principessa Ščerbatskij
 │
 ├── Dolly (Dar'ja Aleksandrovna)
