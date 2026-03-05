@@ -6,6 +6,7 @@ Levin sono persone diverse...molto più pratico e meno teorico del fratello quin
 Durante una discussione emerge come Levin, perso nella sua delusione d'amore e nell'imposisbilità di formare una famiglia, sia di fatto caduto in depressione, pensando ormai solo più alle sue terre per non pensare al resto, disinteressato a tutto...come se l'impossibilità di avere una vita felice l'abbia portato ad una visione profondamente negativa sul futuro e sulla società
 >Levin, però, voleva essere assolto da un peccato che sapeva di avere – il disinteresse per il bene comune – e dunque non si arrese.
 
+c'è qualcosa di mistico nella giornata che Levin passa a falciare con i contadini
 
 ---
 
