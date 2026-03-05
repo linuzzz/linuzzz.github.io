@@ -1,3 +1,11 @@
+>E dopo aver baciato un’ultima volta Kitty senza averle rivelato che cosa fosse davvero importante, a passo lesto e con gli spartiti sottobraccio Varen´ka sparí tra le prime ombre di quella notte d’estate, portando con sé il segreto di quanto davvero contava e della sua invidiabile serenità e nobiltà d’animo.
+
+Bello il confronto tra Levin (cuore e lavoro) con il fratello maggiore Sergej (ragione e pigrizia). Per esempio per Sergej i contadini sono una classe, un'entità astratta, mentre per
+Levin sono persone diverse...molto più pratico e meno teorico del fratello quindi e molto più operoso.
+
+---
+
+
 Il motto di Karenin:
 >«Senza fretta, ma senza requie»
 >(ed. Linkedin)
