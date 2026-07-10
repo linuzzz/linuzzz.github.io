@@ -29,9 +29,11 @@ function updateClock() {
 
     const ore = String(now.getHours()).padStart(2, "0");
     const minuti = String(now.getMinutes()).padStart(2, "0");
+    const secondi = String(now.getSeconds()).padStart(2, "0");
 
     document.getElementById("clock").textContent =
-        `${ore}:${minuti}`;
+        `${ore}:${minuti}:${secondi}`;
+
 
     document.getElementById("date").textContent =
         `${giorni[now.getDay()]} ${now.getDate()} ${mesi[now.getMonth()]} ${now.getFullYear()}`;
