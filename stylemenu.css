@@ -126,7 +126,7 @@ body {
 @media (max-width: 600px) {
 
     .grid {
-        grid-template-columns: repeat(2, 2rem);
+        grid-template-columns: repeat(2, 4rem);
         gap: 25px;
     }
 
@@ -135,7 +135,7 @@ body {
 @media (max-width: 380px) {
 
     .grid {
-        grid-template-columns: 2rem;
+        grid-template-columns: 4rem;
         gap: 20px;
     }
 
