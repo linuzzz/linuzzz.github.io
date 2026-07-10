@@ -141,3 +141,7 @@ body {
 
 }
 
+.logo-svg {
+    /*filter: invert(84%) sepia(9%) saturate(1100%) hue-rotate(165deg) brightness(88%) contrast(83%);*/
+    filter: invert(100%);
+}

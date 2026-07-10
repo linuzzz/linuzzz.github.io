@@ -26,11 +26,25 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
 <div class="header">
 
-    <div id="clock">01:00</div>
+    <div id="clock">00:00</div>
 
     <div id="date">
-        Merdaz Giovedì 10 Luglio 2026
+        Venerdì 10 Luglio 2026
     </div>
+
+    <p>Sunrise and sunset in Turin: 
+
+    <span id="Turin_z723" style="color:#FFFFFF;"></span>
+    <script src="https://widget.time.is/it.js"></script>
+    <script>
+    time_is_widget.init({Turin_z723:
+    {
+		template: "SUN",
+		sun_format: "srhour:srminute - sshour:ssminute",
+		coords: "45.116177,7.742615"
+		}
+    });
+    </script>
 
 </div>
 
@@ -43,6 +57,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 
 <a href="https://www.ilmeteo.it/box/previsioni.php?citta=7301&type=day1&width=600&ico=1&lang=ita&days=6&font=Tahoma&fontsize=14&bg=FFFFFF&fg=000000&bgtitle=0099FF&fgtitle=FFFFFF&bgtab=F0F0F0&fglink=1773C2" class="card">
 <img width="50%" src="./images/ilmeteo.ico"></img>
+</a>
+
+<a href="https://weather.com/it-IT/weather/radar/interactive/l/c10347f5676ed8e68f1d2a63c1cb882bcf287e4253e0687e6c497bd12146698f" class="card">
+<img width="50%" src="./images/weather.webp"></img>
 </a>
 
 <a href="https://www.timeanddate.com/worldclock/italy/turin" class="card">
@@ -109,12 +127,18 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
 <img width="50%" src="./images/amazonmusic.png"></img>
 </a>
 
+<!--
 <a href="https://www.ifconfig.me/" class="card">
 <i class="fa-solid fa-network-wired"></i>
 </a>
+-->
+
+<a href="https://www.ifconfig.me/" class="card">
+<img class="logo-svg" width="50%" src="./images/network-wired.svg"></img>
+</a>
 
 <a href="https://whatismyviewport.com/" class="card">
-<i class="fa-solid fa-eye"></i>
+<img class="logo-svg" width="50%" src="./images/eye.svg"></img>
 </a>
 
 
