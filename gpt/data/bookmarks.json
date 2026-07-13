@@ -1,0 +1,276 @@
+{
+  "categories":[
+
+
+    {
+      "name":"Meteo",
+      "icon":"⛅",
+      "bookmarks":[
+
+        {
+          "title":"3B Meteo",
+          "url":"https://www.3bmeteo.com/meteo/torino",
+          "icon":"img/3bmeteo.jpeg",
+          "iconType": "image"
+        },
+
+        {
+          "title":"Il Meteo",
+          "url":"https://www.ilmeteo.it/box/previsioni.php?citta=7301&type=day1&width=600&ico=1&lang=ita&days=6&font=Tahoma&fontsize=14&bg=FFFFFF&fg=000000&bgtitle=0099FF&fgtitle=FFFFFF&bgtab=F0F0F0&fglink=1773C2",
+          "icon":"img/ilmeteo.png",
+          "iconType": "image"
+        },
+
+        {
+          "title":"Radar",
+          "url":"https://weather.com/it-IT/weather/radar/interactive/l/c10347f5676ed8e68f1d2a63c1cb882bcf287e4253e0687e6c497bd12146698f",
+          "icon":"img/weather.webp",
+          "iconType": "image"
+        },
+
+        {
+          "title":"Time & Date",
+          "url":"https://www.timeanddate.com/worldclock/italy/turin",
+          "icon":"img/timeanddate.ico",
+          "iconType": "image"
+        },
+
+        {
+          "title":"Aria - Arpa",
+          "url":"https://webgis.arpa.piemonte.it/aria_piemonte/",
+          "icon":"hgi-stroke hgi-soil-temperature-field",
+          "iconType": "fa"
+        },
+
+        {
+          "title":"Aria - 3B Meteo",
+          "url":"https://www.3bmeteo.com/aria/torino#1",
+          "icon":"img/3bmeteo.jpeg",
+          "iconType": "image"
+        }
+
+      ]
+    },
+
+    {
+      "name":"Top sites",
+      "icon":"⭐",
+      "bookmarks":[
+
+        {
+          "title":"Inoreader",
+          "url":"https://www.inoreader.com/folder/Torino",
+          "icon":"img/inoreader.png",
+          "iconType": "image"
+        },
+
+        {
+          "title":"Navidrome",
+          "url":"https://navi.linuzzz.duckdns.org/",
+          "icon":"img/navidrome.png",
+          "iconType": "image"
+        },
+
+        {
+          "title":"Immich",
+          "url":"https://immich.linuzzz.duckdns.org/",
+          "icon":"img/immich.ico",
+          "iconType": "image"
+        },
+
+        {
+          "title":"Jellyfin",
+          "url":"http://192.168.1.25:8096/web/#/home",
+          "icon":"img/jellyfin.png",
+          "iconType": "image"
+        },
+
+        {
+          "title":"Biblioteca",
+          "url":"https://bi-to.medialibrary.it/",
+          "icon":"img/iconify-book.svg",
+          "iconType": "svg"
+        },
+
+        {
+          "title":"Github",
+          "url":"https://github.com",
+          "icon":"fa-brands fa-github",
+          "iconType": "fa"
+        }
+
+      ]
+    },
+
+    {
+      "name":"Google",
+      "icon":"🤮",
+      "bookmarks":[
+
+        {
+          "title":"GMail",
+          "url":"https://mail.google.com/mail/u/0/#inbox",
+          "icon":"img/iconify-mail.svg",
+          "iconType": "svg"
+        },
+
+        {
+          "title":"Keep",
+          "url":"https://keep.google.com",
+          "icon":"img/iconify-google-keep.svg",
+          "iconType": "svg"
+        },
+
+        {
+          "title":"Drive",
+          "url":"https://drive.google.com",
+          "icon":"img/iconify-google-drive.svg",
+          "iconType": "svg"
+        },
+
+        {
+          "title":"Calendar",
+          "url":"https://calendar.google.com",
+          "icon":"img/iconify-google-calendar.svg",
+          "iconType": "svg"
+        }
+
+      ]
+    },
+
+    {
+      "name":"Social",
+      "icon":"🥰",
+      "bookmarks":[
+
+        {
+          "title":"Whatsapp",
+          "url":"https://web.whatsapp.com/",
+          "icon":"fa-brands fa-whatsapp",
+          "iconType": "fa"
+        },
+
+        {
+          "title":"Telegram",
+          "url":"https://web.telegram.org/",
+          "icon":"fa-brands fa-telegram",
+          "iconType": "fa"
+        },
+
+        {
+          "title":"Reddit",
+          "url":"https://www.reddit.com/new/?feed=home",
+          "icon":"fa-brands fa-reddit",
+          "iconType": "fa"
+        },
+
+        {
+          "title":"Infosec",
+          "url":"https://infosec.exchange/",
+          "icon":"img/infosec.png",
+          "iconType": "image"
+        },
+
+        {
+          "title":"Mastodon",
+          "url":"https://mastodon.bida.im/neighborhood",
+          "icon":"fa-brands fa-mastodon",
+          "iconType": "fa"
+        }
+
+      ]
+    },
+
+    {
+      "name":"Music",
+      "icon":"🎜",
+      "bookmarks":[
+
+        {
+          "title":"Amazon Music",
+          "url":"https://music.amazon.it/",
+          "icon":"img/amazonmusic.png",
+          "iconType": "image"
+        },
+
+        {
+          "title":"YT Music",
+          "url":"https://music.youtube.com/",
+          "icon":"fa-brands fa-square-youtube",
+          "iconType": "fa"
+        }
+
+      ]
+    },
+
+
+    {
+      "name":"Games",
+      "icon":"🛡️",
+      "bookmarks":[
+
+        {
+          "title":"Solitalian",
+          "url":"https://www.solitalian.it/",
+          "icon":"img/iconify-cards.svg",
+          "iconType": "svg"
+        },
+
+        {
+          "title":"Sudoku",
+          "url":"https://sudoku.jull.dev/",
+          "icon":"img/iconify-sudoku.svg",
+          "iconType": "svg"
+        },
+
+        {
+          "title":"Wordly",
+          "url":"https://wordly.org/it",
+          "icon":"img/wordly.ico",
+          "iconType": "image"
+        },
+        
+        {
+          "title":"2048",
+          "url":"https://api.razzlepuzzles.com/2048?locale=it",
+          "icon":"img/2048.webp",
+          "iconType": "image"
+        }
+
+      ]
+    },
+
+
+    {
+      "name":"AI",
+      "icon":"🤖",
+      "bookmarks":[
+
+        {
+          "title":"Chat GPT",
+          "url":"https://chatgpt.com/",
+          "icon":"img/iconify-chat-gpt.svg",
+          "iconType": "svg"
+        },
+        
+
+        {
+          "title":"Ollama",
+          "url":"https://ollama.com",
+          "icon":"fa-brands fa-github",
+          "iconType": "fa"
+        },
+
+        {
+          "title":"Hugging Face",
+          "url":"https://huggingface.co",
+          "icon":"fa-brands fa-github",
+          "iconType": "fa"
+        }
+
+      ]
+    }
+
+
+  ]
+}

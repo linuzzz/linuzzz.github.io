@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Bookmarks</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://use.hugeicons.com/font/icons.css" />
+
+    <!-- Carica OpenDyslexic tramite il CDN ufficiale di CDNFonts -->
+    <link href="https://fonts.cdnfonts.com/css/opendyslexic" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="background-grid"></div>
+<div class="background-glow"></div>
+
+<header>
+
+    <div class="title-area">
+
+        <h1>Bookmarks</h1>
+
+        <div class="subtitle">
+            Personal Dashboard
+        </div>
+
+    </div>
+
+    <div class="status-panel">
+
+        <div class="status-item">
+            <span class="label">STATUS</span>
+            <span class="value online">ONLINE</span>
+        </div>
+
+        <div class="status-item">
+            <span class="label">BOOKMARKS</span>
+            <span class="value" id="bookmark-count">0</span>
+        </div>
+
+        <div class="status-item">
+            <span class="label">CATEGORIES</span>
+            <span class="value" id="category-count">0</span>
+        </div>
+
+    </div>
+
+</header>
+
+
+<section class="toolbar">
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search bookmarks..."
+            autocomplete="off">
+
+    </div>
+
+    <div id="sun">
+        <p>Sunrise and sunset in Turin: 
+
+        <span id="Turin_z723" style="color:#FFFFFF;"></span>
+        <script src="https://widget.time.is/it.js"></script>
+        <script>
+            time_is_widget.init({Turin_z723:
+            {
+		    template: "SUN",
+		    sun_format: "srhour:srminute - sshour:ssminute",
+		    coords: "45.116177,7.742615"
+		    }
+        });
+        </script>
+    </div>
+
+    <div class="toolbar-right">
+
+        <!--
+        <div id="weather">
+            --
+        </div>
+        -->
+
+        <div id="clock">
+            --:--
+        </div>
+
+    </div>
+
+</section>
+
+
+<nav id="categoryBar">
+
+    <!-- Pulsanti categorie creati dinamicamente -->
+
+</nav>
+
+
+<main id="content">
+
+    <!-- Tutto viene creato via JavaScript -->
+
+</main>
+
+
+<footer>
+
+    <div>
+
+        CyberBookmarks v1.0
+
+    </div>
+
+</footer>
+
+
+
+<script src="js/storage.js"></script>
+<script src="js/bookmarks.js"></script>
+<script src="js/search.js"></script>
+<script src="js/clock.js"></script>
+<script src="js/weather.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

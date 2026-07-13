@@ -1,0 +1,489 @@
+/* ======================================================
+   CYBERBOOKMARKS
+   style.css
+   ====================================================== */
+
+:root{
+
+    --bg:#05070D;
+    --bg2:#0C111B;
+    --card:#101826;
+
+    --cyan:#00F7FF;
+    --pink:#FF007A;
+    --green:#4DFF91;
+    --white:#D7F8FF;
+    --orange:#F8BC2F;
+    --foreground:#F3E9D0;
+
+
+    --border:#1A3245;
+
+    --radius:14px;
+
+}
+
+/**************************************************/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+    /* Devo mettere il font family qui perché elementi quali "button" non ereditano da body */
+    /* occhio a non mettere !important altrimenti non carica poi i font awesome o altri font per le icone */
+    font-family: 'OpenDyslexic';
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--bg);
+
+    color:var(--white);
+    
+    min-height:100vh;
+
+    overflow-x:hidden;
+
+}
+
+/**************************************************/
+
+.background-grid{
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+
+        linear-gradient(
+            rgba(0,247,255,.06) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(0,247,255,.06) 1px,
+            transparent 1px
+        );
+
+    background-size:40px 40px;
+
+    pointer-events:none;
+
+    z-index:-2;
+
+}
+
+/**************************************************/
+
+.background-glow{
+
+    position:fixed;
+
+    width:900px;
+    height:900px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+
+            rgba(0,247,255,.10),
+
+            transparent 70%
+
+        );
+
+    top:-300px;
+    right:-200px;
+
+    filter:blur(80px);
+
+    z-index:-1;
+
+}
+
+/**************************************************/
+
+header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:50px;
+
+    padding:40px;
+
+}
+
+.title-area h1{
+
+    font-size:42px;
+
+    color:var(--orange);
+
+    letter-spacing:4px;
+
+    /*
+    text-shadow:
+
+        0 0 10px var(--cyan),
+        0 0 30px var(--cyan);
+    */
+}
+
+.subtitle{
+
+    color:var(--foreground);
+
+    margin-top:10px;
+
+}
+
+/**************************************************/
+
+.status-panel{
+
+    display:flex;
+
+    gap:25px;
+
+}
+
+.status-item{
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:15px 22px;
+
+    min-width:130px;
+
+    backdrop-filter:blur(12px);
+
+}
+
+.status-item .label{
+
+    display:block;
+
+    font-size:11px;
+
+    color:var(--foreground);
+
+}
+
+.status-item .value{
+
+    font-size:22px;
+
+    color:var(--foreground);
+
+}
+
+.status-item .online{
+
+    color:var(--green);
+
+}
+
+/**************************************************/
+
+.toolbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 40px 30px;
+
+    gap:20px;
+
+}
+
+.search-box{
+
+    flex:1;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    background:var(--bg2);
+
+    border:1px solid var(--border);
+
+    color:var(--foreground);
+
+    font-size:17px;
+
+    padding:16px;
+
+    border-radius:var(--radius);
+
+    outline:none;
+
+    transition:.25s;
+
+}
+
+.search-box input:focus{
+
+    border-color:var(--foreground);
+
+    box-shadow:
+
+        0 0 20px rgba(0,247,255,.3);
+
+}
+
+.toolbar-right{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+#clock,
+#weather,
+#sun {
+
+    background:var(--bg2);
+
+    border-radius:var(--radius);
+
+    border:1px solid var(--border);
+
+    padding:16px 20px;
+
+    white-space:nowrap;
+
+    color:var(--foreground);
+
+}
+
+/**************************************************/
+
+#categoryBar{
+
+    display:flex;
+
+    gap:12px;
+
+    padding:0 40px 30px;
+
+    overflow-x:auto;
+
+}
+
+.category-button{
+
+    background:var(--bg2);
+
+    border:1px solid var(--border);
+
+    color:var(--foreground);
+
+    border-radius:50px;
+
+    padding:10px 22px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.category-button:hover{
+
+    border-color:var(--orange);
+
+    box-shadow:
+
+        0 0 15px rgba(255,106,0,.25);
+
+}
+
+/*
+.category-button.active{
+
+    background:var(--orange);
+
+    color:black;
+
+}
+*/
+
+/**************************************************/
+
+main{
+
+    padding:0 40px 60px;
+
+}
+
+/**************************************************/
+
+.category{
+
+    margin-bottom:50px;
+    /*background:var(--bg2);*/
+
+}
+
+.category-title{
+
+    color:var(--orange);
+
+    font-size:28px;
+
+    margin-bottom:25px;
+
+    /*
+    text-shadow:
+
+        0 0 12px var(--cyan);
+    */
+}
+
+/**************************************************/
+
+.bookmarks{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(auto-fill,minmax(220px,1fr));
+
+    gap:0.5rem;
+
+}
+
+/**************************************************/
+
+.card{
+
+    background:rgba(16,24,38,.75);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius);
+
+    padding:0.4rem;
+
+    backdrop-filter:blur(12px);
+
+    transition:.25s;
+
+}
+
+.card:hover{
+
+    transform:
+
+        translateY(-5px);
+
+    border-color:var(--foreground);
+
+    box-shadow:
+
+        0 0 25px rgba(255,106,0,.25);
+
+}
+
+.card a{
+
+    color:var(--foreground);
+
+    text-decoration:none;
+
+}
+
+.card-title{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:12px;
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+.card-title i{
+
+    color:var(--accent);
+
+    font-size:24px;
+
+    margin-right:12px;
+
+}
+
+.bookmark-icon{
+
+    width:28px;
+
+    height:28px;
+
+    object-fit:contain;
+
+}
+
+.bookmark-svg{
+
+    width:28px;
+
+    height:28px;
+
+    object-fit:contain;
+
+    filter: brightness(0) saturate(100%) invert(97%) sepia(70%) saturate(312%) hue-rotate(319deg) brightness(99%) contrast(92%);
+
+}
+
+.card-url{
+
+    color:#7da0af;
+
+    font-size:13px;
+
+}
+
+/**************************************************/
+
+footer{
+
+    text-align:center;
+
+    color:#5e8293;
+
+    padding:50px;
+
+}
