@@ -262,10 +262,17 @@
         },
 
         {
-          "title":"Hugging Face",
-          "url":"https://huggingface.co",
-          "icon":"fa-brands fa-github",
-          "iconType": "fa"
+          "title":"Deepseek",
+          "url":"https://chat.deepseek.com/",
+          "icon":"img/deepseek.png",
+          "iconType": "image"
+        },
+
+        {
+          "title":"Gemini",
+          "url":"https://gemini.google.com/app?hl=it",
+          "icon":"img/gemini.png",
+          "iconType": "image"
         }
 
       ]
