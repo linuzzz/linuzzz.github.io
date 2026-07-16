@@ -276,6 +276,35 @@
         }
 
       ]
+    },
+
+    {
+      "name":"Others",
+      "icon":"🖌️",
+      "bookmarks":[
+
+        {
+          "title":"Samsung",
+          "url":"https://www.samsung.com/it/mypage/myproducts/",
+          "icon":"img/samsung.png",
+          "iconType": "image"
+        },
+
+        {
+          "title":"Outlook",
+          "url":"https://outlook.live.com/mail/",
+          "icon":"img/outlook.png",
+          "iconType": "image"
+        },
+
+        {
+          "title":"PEC",
+          "url":"https://www.letterasenzabusta.com",
+          "icon":"fa-solid fa-envelope-open-text",
+          "iconType": "fa"
+        }
+
+      ]
     }
 
 
