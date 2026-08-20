@@ -279,6 +279,56 @@
     },
 
     {
+      "name":"Artwork",
+      "icon":"🖌️",
+      "bookmarks":[
+
+        {
+          "title":"Wallpaper Access",
+          "url":"https://wallpaperaccess.com/minimalist-science",
+          "icon":"fa fa-image",
+          "iconType": "fa"
+        },
+
+        {
+          "title":"Alpha Coders",
+          "url":"https://alphacoders.com/",
+          "icon":"fa fa-image",
+          "iconType": "fa"
+        },
+
+        {
+          "title":"Wallpaper Cave",
+          "url":"https://wallpapercave.com/",
+          "icon":"fa fa-image",
+          "iconType": "fa"
+        },
+
+        {
+          "title":"Pexels",
+          "url":"https://www.pexels.com/",
+          "icon":"fa fa-image",
+          "iconType": "fa"
+        },
+
+        {
+          "title":"Wallpaper Flare",
+          "url":"https://www.wallpaperflare.com/",
+          "icon":"fa fa-image",
+          "iconType": "fa"
+        },
+
+        {
+          "title":"Wall Haven",
+          "url":"https://wallhaven.cc/",
+          "icon":"fa fa-image",
+          "iconType": "fa"
+        }
+
+      ]
+    },
+
+    {
       "name":"Others",
       "icon":"🖌️",
       "bookmarks":[
