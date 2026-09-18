@@ -29,11 +29,20 @@ function filterBookmarks(node, query) {
 }
 
 function renderBookmarks(query = '') {
-  const filteredData = filterBookmarks(bookmarksData, query.trim().toLowerCase());
+  const filteredData = Array.isArray(bookmarksData)
+    ? bookmarksData
+      .map((section) => filterBookmarks(section, query.trim().toLowerCase()))
+      .filter(Boolean)
+    : filterBookmarks(bookmarksData, query.trim().toLowerCase());
+  const hasFilteredData = Array.isArray(filteredData) ? filteredData.length > 0 : Boolean(filteredData);
   rootElement.replaceChildren();
 
-  if (filteredData) {
-    rootElement.appendChild(createFolderCard(filteredData));
+  if (hasFilteredData) {
+    if (Array.isArray(filteredData)) {
+      filteredData.forEach((section) => rootElement.appendChild(createFolderCard(section)));
+    } else {
+      rootElement.appendChild(createFolderCard(filteredData));
+    }
   } else {
     const empty = document.createElement('div');
     empty.className = 'empty-folder';
@@ -43,8 +52,11 @@ function renderBookmarks(query = '') {
 
   const hasQuery = query.trim().length > 0;
   clearSearchButton.hidden = !hasQuery;
-  searchStatus.textContent = hasQuery && filteredData
-    ? `${countBookmarks(filteredData)} matching bookmark${countBookmarks(filteredData) === 1 ? '' : 's'}`
+  const matchingCount = Array.isArray(filteredData)
+    ? filteredData.reduce((total, section) => total + countBookmarks(section), 0)
+    : countBookmarks(filteredData);
+  searchStatus.textContent = hasQuery && hasFilteredData
+    ? `${matchingCount} matching bookmark${matchingCount === 1 ? '' : 's'}`
     : '';
 }
 

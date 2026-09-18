@@ -1,7 +1,4 @@
-{
-  "name": "Bookmarks",
-  "type": "folder",
-  "children": [
+[
     {
       "name": "menu",
       "type": "folder",
@@ -1766,5 +1763,4 @@
         }
       ]
     }
-  ]
-}
+]
